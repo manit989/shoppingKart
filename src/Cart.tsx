@@ -1,8 +1,5 @@
 import { useState } from "react";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   Badge,
   Box,
   Button,
@@ -41,21 +38,19 @@ export default function Cart() {
 
   return (
     <Box minH="100vh" bg={pageBg} px={{ base: 4, md: 8, lg: 12 }} py={{ base: 8, md: 12 }}>
-      <Breadcrumb mb={4} color={mutedColor}>
-        <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/">
-            Home
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/product">
-            Products
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink>Cart</BreadcrumbLink>
-        </BreadcrumbItem>
-      </Breadcrumb>
+      <Flex mb={4} gap={3} wrap="wrap" color={mutedColor} fontSize="sm">
+        <Box as={Link} to="/">
+          Home
+        </Box>
+        <Box as="span">/</Box>
+        <Box as={Link} to="/product">
+          Products
+        </Box>
+        <Box as="span">/</Box>
+        <Box as="span" color={headingColor} fontWeight="700">
+          Cart
+        </Box>
+      </Flex>
 
       <Flex direction={{ base: "column", lg: "row" }} gap={8} align="start">
         <Box flex="1" w="full" bg={cardBg} borderWidth="1px" borderColor={borderColor}>

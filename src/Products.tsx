@@ -31,7 +31,8 @@ const furnitureProducts: Product[] = [
     id: 1,
     title: "Luna Lounge Chair",
     price: 18999,
-    description: "A sculpted lounge chair with soft upholstery for relaxed evenings.",
+    description:
+      "A sculpted lounge chair with soft upholstery for relaxed evenings.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -41,7 +42,8 @@ const furnitureProducts: Product[] = [
     id: 2,
     title: "Harbor Accent Chair",
     price: 12999,
-    description: "Minimal silhouette and textured fabric for a polished reading corner.",
+    description:
+      "Minimal silhouette and textured fabric for a polished reading corner.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -51,7 +53,8 @@ const furnitureProducts: Product[] = [
     id: 9,
     title: "Moss Reading Chair",
     price: 15999,
-    description: "A cozy chair with deep cushions for slow mornings and late reading.",
+    description:
+      "A cozy chair with deep cushions for slow mornings and late reading.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -61,7 +64,8 @@ const furnitureProducts: Product[] = [
     id: 10,
     title: "Pine Lounge Seat",
     price: 17499,
-    description: "A soft upholstered seat with a compact footprint for smaller spaces.",
+    description:
+      "A soft upholstered seat with a compact footprint for smaller spaces.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -71,7 +75,8 @@ const furnitureProducts: Product[] = [
     id: 17,
     title: "Alder Armchair",
     price: 13999,
-    description: "An armchair with tailored stitching and a low, relaxed profile.",
+    description:
+      "An armchair with tailored stitching and a low, relaxed profile.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -81,7 +86,8 @@ const furnitureProducts: Product[] = [
     id: 18,
     title: "Willow Occasional Chair",
     price: 14999,
-    description: "A versatile occasional chair for reading corners and side seating.",
+    description:
+      "A versatile occasional chair for reading corners and side seating.",
     category: "Chair",
     sectionId: "chairs",
     image:
@@ -91,7 +97,8 @@ const furnitureProducts: Product[] = [
     id: 3,
     title: "Oak Dining Table",
     price: 34999,
-    description: "Solid oak table designed for intimate dinners and weekend hosting.",
+    description:
+      "Solid oak table designed for intimate dinners and weekend hosting.",
     category: "Table",
     sectionId: "tables",
     image:
@@ -111,7 +118,8 @@ const furnitureProducts: Product[] = [
     id: 11,
     title: "Haven Coffee Table",
     price: 14999,
-    description: "A low profile coffee table with rounded edges and warm wood grain.",
+    description:
+      "A low profile coffee table with rounded edges and warm wood grain.",
     category: "Table",
     sectionId: "tables",
     image:
@@ -121,7 +129,8 @@ const furnitureProducts: Product[] = [
     id: 12,
     title: "Elm Work Desk",
     price: 26999,
-    description: "A clean desk with room for focused work and everyday essentials.",
+    description:
+      "A clean desk with room for focused work and everyday essentials.",
     category: "Table",
     sectionId: "tables",
     image:
@@ -131,7 +140,8 @@ const furnitureProducts: Product[] = [
     id: 19,
     title: "Mina Side Table",
     price: 9999,
-    description: "A compact side table that slots neatly beside sofas and beds.",
+    description:
+      "A compact side table that slots neatly beside sofas and beds.",
     category: "Table",
     sectionId: "tables",
     image:
@@ -141,7 +151,8 @@ const furnitureProducts: Product[] = [
     id: 20,
     title: "Ash Center Table",
     price: 18999,
-    description: "A grounded center table designed for lounging and conversation.",
+    description:
+      "A grounded center table designed for lounging and conversation.",
     category: "Table",
     sectionId: "tables",
     image:
@@ -151,7 +162,8 @@ const furnitureProducts: Product[] = [
     id: 5,
     title: "Cove Storage Cabinet",
     price: 28999,
-    description: "Clean-lined storage with hidden compartments for modern living spaces.",
+    description:
+      "Clean-lined storage with hidden compartments for modern living spaces.",
     category: "Storage",
     sectionId: "storage",
     image:
@@ -161,7 +173,8 @@ const furnitureProducts: Product[] = [
     id: 6,
     title: "Marlow Sideboard",
     price: 39999,
-    description: "Warm wood finish and soft-close drawers for a refined statement piece.",
+    description:
+      "Warm wood finish and soft-close drawers for a refined statement piece.",
     category: "Storage",
     sectionId: "storage",
     image:
@@ -171,27 +184,19 @@ const furnitureProducts: Product[] = [
     id: 13,
     title: "Drift Tall Cabinet",
     price: 31999,
-    description: "Tall vertical storage for books, ceramics, and collected objects.",
+    description:
+      "Tall vertical storage for books, ceramics, and collected objects.",
     category: "Storage",
     sectionId: "storage",
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
   },
   {
-    id: 14,
-    title: "Nord Media Console",
-    price: 36999,
-    description: "A streamlined media console with concealed shelving and cable cutouts.",
-    category: "Storage",
-    sectionId: "storage",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80",
-  },
-  {
     id: 21,
     title: "Moss Bookcase",
     price: 17999,
-    description: "Open shelving that balances display storage with a light visual footprint.",
+    description:
+      "Open shelving that balances display storage with a light visual footprint.",
     category: "Storage",
     sectionId: "storage",
     image:
@@ -221,7 +226,8 @@ const furnitureProducts: Product[] = [
     id: 8,
     title: "Atelier Bed Set",
     price: 52999,
-    description: "Sculptural bed set paired with tonal linens for a calming retreat.",
+    description:
+      "Sculptural bed set paired with tonal linens for a calming retreat.",
     category: "Bed",
     sectionId: "beds",
     image:
@@ -231,7 +237,8 @@ const furnitureProducts: Product[] = [
     id: 15,
     title: "Sable Platform Bed",
     price: 48999,
-    description: "A minimal platform bed that brings quiet structure to the bedroom.",
+    description:
+      "A minimal platform bed that brings quiet structure to the bedroom.",
     category: "Bed",
     sectionId: "beds",
     image:
@@ -241,7 +248,8 @@ const furnitureProducts: Product[] = [
     id: 16,
     title: "Cloud Bedside Set",
     price: 22999,
-    description: "Matching bedside tables with soft corners and integrated drawers.",
+    description:
+      "Matching bedside tables with soft corners and integrated drawers.",
     category: "Bed",
     sectionId: "beds",
     image:
@@ -251,7 +259,8 @@ const furnitureProducts: Product[] = [
     id: 23,
     title: "Aurora Upholstered Bed",
     price: 56999,
-    description: "A generous upholstered bed with a tall headboard and soft lines.",
+    description:
+      "A generous upholstered bed with a tall headboard and soft lines.",
     category: "Bed",
     sectionId: "beds",
     image:
@@ -270,10 +279,26 @@ const furnitureProducts: Product[] = [
 ];
 
 const sectionConfig = [
-  { id: "chairs", title: "Chairs", description: "Comfort-first seating for modern interiors." },
-  { id: "tables", title: "Tables", description: "Statement pieces for dining, work, and display." },
-  { id: "storage", title: "Storage", description: "Smart organisation with sculptural silhouettes." },
-  { id: "beds", title: "Beds", description: "Restful foundations with premium finishes." },
+  {
+    id: "chairs",
+    title: "Chairs",
+    description: "Comfort-first seating for modern interiors.",
+  },
+  {
+    id: "tables",
+    title: "Tables",
+    description: "Statement pieces for dining, work, and display.",
+  },
+  {
+    id: "storage",
+    title: "Storage",
+    description: "Smart organisation with sculptural silhouettes.",
+  },
+  {
+    id: "beds",
+    title: "Beds",
+    description: "Restful foundations with premium finishes.",
+  },
 ];
 
 const formatCurrency = (value: number) => `₹${value.toLocaleString("en-IN")}`;
@@ -290,7 +315,12 @@ export default function Products() {
   const categoryTags = ["Chairs", "Tables", "Storage", "Beds"];
 
   return (
-    <Box minH="100vh" bg={pageBg} px={{ base: 4, md: 8, lg: 12 }} py={{ base: 8, md: 12 }}>
+    <Box
+      minH="100vh"
+      bg={pageBg}
+      px={{ base: 4, md: 8, lg: 12 }}
+      py={{ base: 8, md: 12 }}
+    >
       <Box mb={8}>
         <Badge colorPalette="brown" mb={3}>
           Collection overview
@@ -299,11 +329,12 @@ export default function Products() {
           Browse by room and function
         </Heading>
         <Text color={mutedColor} maxW="3xl">
-          Scroll through the categories, compare pieces in a more visual format, and build a cart that maps to a real furnishing project.
+          Scroll through the categories, compare pieces in a more visual format,
+          and build a cart that maps to a real furnishing project.
         </Text>
 
         <Wrap mt={5} gap={3}>
-          {categoryTags.map(tag => (
+          {categoryTags.map((tag) => (
             <WrapItem key={tag}>
               <Badge colorPalette="brown" variant="subtle" px={3} py={1}>
                 {tag}
@@ -320,9 +351,15 @@ export default function Products() {
       </Box>
 
       <Stack gap={8}>
-        {sectionConfig.map(section => (
+        {sectionConfig.map((section) => (
           <Box key={section.id} id={section.id} scrollMarginTop="90px">
-            <Flex justify="space-between" align="end" mb={4} gap={4} wrap="wrap">
+            <Flex
+              justify="space-between"
+              align="end"
+              mb={4}
+              gap={4}
+              wrap="wrap"
+            >
               <Box>
                 <Heading as="h3" size="lg" color={headingColor}>
                   {section.title}
@@ -344,8 +381,8 @@ export default function Products() {
               pr={2}
             >
               {furnitureProducts
-                .filter(product => product.sectionId === section.id)
-                .map(product => (
+                .filter((product) => product.sectionId === section.id)
+                .map((product) => (
                   <Box
                     key={product.id}
                     borderWidth="1px"
@@ -361,7 +398,11 @@ export default function Products() {
                         <img
                           src={product.image}
                           alt={product.title}
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
                         />
                       </AspectRatio>
 
@@ -376,10 +417,18 @@ export default function Products() {
                           {product.description}
                         </Text>
                         <Flex justify="space-between" align="center">
-                          <Text fontWeight="bold" fontSize="lg" color={headingColor}>
+                          <Text
+                            fontWeight="bold"
+                            fontSize="lg"
+                            color={headingColor}
+                          >
                             {formatCurrency(product.price)}
                           </Text>
-                          <Button size="sm" colorPalette="brown" onClick={() => addToCart(product)}>
+                          <Button
+                            size="sm"
+                            colorPalette="brown"
+                            onClick={() => addToCart(product)}
+                          >
                             <FiShoppingBag style={{ marginRight: "6px" }} />
                             Add
                           </Button>
