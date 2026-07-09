@@ -3,7 +3,6 @@ import { createContext, useContext, useMemo, useState, type ReactNode } from "re
 export type CartProduct = {
   id: number;
   title: string;
-  price: number;
   description: string;
   category: string;
   image: string;

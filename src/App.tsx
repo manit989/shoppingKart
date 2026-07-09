@@ -39,10 +39,9 @@ export function App() {
   const buttonHoverBg = useColorModeValue("brown.800", "#EBC9AD");
 
   const trustStats = [
-    { value: "250+", label: "Pieces curated" },
-    { value: "4.9/5", label: "Average review score" },
+    { value: "4.0+/5", label: "Average review score" },
     { value: "48h", label: "Fast enquiry response" },
-    { value: "1,200+", label: "Rooms styled" },
+    { value: "100+", label: "Offices styled" },
   ];
 
   const serviceHighlights = [
@@ -66,7 +65,7 @@ export function App() {
   const processSteps = [
     {
       title: "Browse the collections",
-      text: "Explore chairs, tables, storage, and bedroom pieces by section.",
+      text: "Explore chairs, tables, and storage pieces by section.",
     },
     {
       title: "Add what fits your room",
@@ -74,7 +73,7 @@ export function App() {
     },
     {
       title: "Send an enquiry",
-      text: "Share your details and we’ll follow up with a tailored quote.",
+      text: "Share your details and we’ll follow up with a tailored response.",
     },
   ];
 
@@ -83,7 +82,7 @@ export function App() {
       <Flex
         minH={{ base: "90vh", md: "115vh" }}
         direction="column"
-        bgImage={`${overlay}, url('https://assets.architecturaldigest.in/photos/66b05d51630eef2f7d472bed/16:9/w_1920,c_limit/3-AD-Ashna.jpg')`}
+        bgImage={`${overlay}, url('https://www.mindspace.me/wp-content/uploads/2025/07/new-york-brooklyn-coworking-space-.jpg')`}
         bgSize="cover, cover"
         bgRepeat="no-repeat"
         bgPos={{ base: "center", md: "center right" }}
@@ -120,12 +119,12 @@ export function App() {
                 <Wrap>
                   <WrapItem>
                     <Badge colorPalette="brown" variant="subtle" px={3} py={1}>
-                      Curated production-ready spaces
+                      AVIMA seating
                     </Badge>
                   </WrapItem>
                   <WrapItem>
                     <Badge colorPalette="orange" variant="subtle" px={3} py={1}>
-                      Mid-century collection
+                      Smart office furniture solutions
                     </Badge>
                   </WrapItem>
                 </Wrap>
@@ -141,9 +140,9 @@ export function App() {
                     mb="6"
                     textTransform="uppercase"
                   >
-                    Mid-Century <br />
-                    Modern <br />
-                    Collection
+                    AVIMA <br />
+                    Seating <br />
+                    Furniture
                   </Heading>
 
                   <Text
@@ -154,9 +153,8 @@ export function App() {
                     lineHeight="relaxed"
                     maxW="md"
                   >
-                    Discover timeless designs for modern living. Elevate your
-                    space with our curated selection of premium furniture and
-                    tailored service.
+                    Discover seating and workplace furniture built for modern
+                    offices, collaborative areas, and focused work.
                   </Text>
 
                   <Button
@@ -210,48 +208,6 @@ export function App() {
               </Stack>
             </Flex>
           </GridItem>
-
-          <GridItem display={{ base: "none", lg: "block" }} minH="115vh">
-            <Flex h="full" direction="column" justify="space-between" p={8}>
-              <Box
-                bg={softPanelBg}
-                borderWidth="1px"
-                borderColor="brown.200"
-                p={6}
-              >
-                <Text
-                  fontSize="sm"
-                  textTransform="uppercase"
-                  letterSpacing="0.14em"
-                  color={bodyText}
-                  mb={4}
-                >
-                  Interior palette
-                </Text>
-                <SimpleGrid columns={2} gap={3}>
-                  {[
-                    "Walnut",
-                    "Cognac",
-                    "Linen",
-                    "Bone",
-                    "Aged Brass",
-                    "Clay",
-                  ].map((color) => (
-                    <Box
-                      key={color}
-                      borderWidth="1px"
-                      borderColor="brown.200"
-                      p={3}
-                    >
-                      <Text color={panelText} fontWeight="600">
-                        {color}
-                      </Text>
-                    </Box>
-                  ))}
-                </SimpleGrid>
-              </Box>
-            </Flex>
-          </GridItem>
         </Grid>
       </Flex>
 
@@ -266,16 +222,15 @@ export function App() {
             color={bodyText}
             mb={3}
           >
-            About us
+            About AVIMA
           </Text>
           <Heading as="h2" size="xl" color={panelText} mb={3}>
-            Designed to feel warm, calm, and lived in.
+            Designed to make workspaces feel calm, focused, and comfortable.
           </Heading>
           <Text color={bodyText} fontSize={{ base: "md", md: "lg" }} maxW="3xl">
-            Furniture Shop is a small home-ware studio focused on furniture that
-            balances comfort, durability, and a quiet mid-century look. Every
-            piece is selected to make your home feel more intentional without
-            feeling stiff.
+            AVIMA Seating is a smart office furniture brand focused on comfort,
+            durability, and practical design. Every piece is selected to support
+            productive workspaces without feeling stiff.
           </Text>
         </Box>
 
@@ -370,7 +325,7 @@ export function App() {
             <Accordion.ItemContent>
               <Accordion.ItemBody>
                 We confirm stock, estimate delivery, and return with a tailored
-                quote for your selected furniture.
+                follow-up for your selected furniture.
               </Accordion.ItemBody>
             </Accordion.ItemContent>
           </Accordion.Item>
@@ -383,7 +338,7 @@ export function App() {
             <Accordion.ItemContent>
               <Accordion.ItemBody>
                 Yes. The cart is designed for mixed rooms, so you can combine
-                seating, tables, storage, and bedroom pieces.
+                seating, tables, and storage pieces.
               </Accordion.ItemBody>
             </Accordion.ItemContent>
           </Accordion.Item>
@@ -411,9 +366,8 @@ export function App() {
           </Text>
           <Heading as="h3" size="lg" color={panelText} mb={3} maxW="3xl">
             "The catalogue feels curated, the enquiry flow is simple, and the
-            pieces fit right into a modern home."
+            pieces fit right into a modern office."
           </Heading>
-          <Text color={bodyText}>- Maya R., Interior project lead</Text>
         </Box>
       </Box>
     </Box>

@@ -6,13 +6,11 @@ export type RawProduct = {
   category: string;
   photo: string;
   info: string;
-  price: number;
 };
 
 export type CatalogProduct = {
   id: number;
   title: string;
-  price: number;
   description: string;
   category: string;
   image: string;
@@ -44,7 +42,6 @@ function titleCase(value: string) {
 export const catalogProducts: CatalogProduct[] = products.map(product => ({
   id: product.id,
   title: product.name,
-  price: product.price,
   description: product.info,
   category: product.category,
   image: product.photo,

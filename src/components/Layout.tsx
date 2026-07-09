@@ -15,10 +15,10 @@ export default function Layout() {
       >
         <HStack gap={3} flexWrap="wrap" justify="center">
           <Text fontSize="sm" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase">
-            White glove delivery
+            AVIMA Seating
           </Text>
           <Text fontSize="sm" opacity={0.9}>
-            Free enquiry support, tailored room planning, and premium assembly options.
+            Smart office furniture solutions for seating, storage, and workstations.
           </Text>
         </HStack>
       </Flex>
@@ -40,10 +40,10 @@ export default function Layout() {
                 color="#2B1A12"
                 mb={3}
               >
-                Furniture Shop
+                AVIMA
               </Text>
               <Text color="brown.800" maxW="sm">
-                Curated furniture and interior pieces designed for calm, practical, and long-lasting homes.
+                Smart office furniture solutions designed for calm, practical, and long-lasting workspaces.
               </Text>
             </Box>
 
@@ -53,6 +53,7 @@ export default function Layout() {
               </Text>
               <HStack gap={4} flexWrap="wrap">
                 <Link href="/">Home</Link>
+                <Link href="/about">About</Link>
                 <Link href="/product">Products</Link>
                 <Link href="/cart">Cart</Link>
               </HStack>

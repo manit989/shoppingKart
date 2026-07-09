@@ -1,194 +1,359 @@
 [
   {
     "id": 1,
-    "name": "Luna Lounge Chair",
+    "name": "AS-102 President Series",
     "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1519947486511-46149fa0a254?auto=format&fit=crop&w=900&q=80",
-    "info": "A sculpted lounge chair with soft upholstery for relaxed evenings.",
-    "price": 18999
+    "photo": "https://i.postimg.cc/L6LTVpyq/image.png",
+    "info": ""
   },
   {
     "id": 2,
-    "name": "Harbor Accent Chair",
+    "name": "AS-106 President Series",
     "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
-    "info": "Minimal silhouette and textured fabric for a polished reading corner.",
-    "price": 12999
-  },
-  {
-    "id": 9,
-    "name": "Moss Reading Chair",
-    "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=900&q=80",
-    "info": "A cozy chair with deep cushions for slow mornings and late reading.",
-    "price": 15999
-  },
-  {
-    "id": 10,
-    "name": "Pine Lounge Seat",
-    "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1573866926486-3ea788a1b0a8?auto=format&fit=crop&w=900&q=80",
-    "info": "A soft upholstered seat with a compact footprint for smaller spaces.",
-    "price": 17499
-  },
-  {
-    "id": 17,
-    "name": "Alder Armchair",
-    "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
-    "info": "An armchair with tailored stitching and a low, relaxed profile.",
-    "price": 13999
-  },
-  {
-    "id": 18,
-    "name": "Willow Occasional Chair",
-    "category": "Chairs",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "A versatile occasional chair for reading corners and side seating.",
-    "price": 14999
+    "photo": "https://i.postimg.cc/Nj8dQcms/image.png",
+    "info": ""
   },
   {
     "id": 3,
-    "name": "Oak Dining Table",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=900&q=80",
-    "info": "Solid oak table designed for intimate dinners and weekend hosting.",
-    "price": 34999
+    "name": "AS-113 President Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/MZM2qnTx/image.png",
+    "info": ""
   },
   {
     "id": 4,
-    "name": "Ridge Console Table",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "A slim console that adds storage and style to any entryway.",
-    "price": 21999
-  },
-  {
-    "id": 11,
-    "name": "Haven Coffee Table",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
-    "info": "A low profile coffee table with rounded edges and warm wood grain.",
-    "price": 14999
-  },
-  {
-    "id": 12,
-    "name": "Elm Work Desk",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80",
-    "info": "A clean desk with room for focused work and everyday essentials.",
-    "price": 26999
-  },
-  {
-    "id": 19,
-    "name": "Mina Side Table",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80",
-    "info": "A compact side table that slots neatly beside sofas and beds.",
-    "price": 9999
-  },
-  {
-    "id": 20,
-    "name": "Ash Center Table",
-    "category": "Tables",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "A grounded center table designed for lounging and conversation.",
-    "price": 18999
+    "name": "AS-137 President Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/mD7n1HFx/image.png",
+    "info": ""
   },
   {
     "id": 5,
-    "name": "Cove Storage Cabinet",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80",
-    "info": "Clean-lined storage with hidden compartments for modern living spaces.",
-    "price": 28999
+    "name": "AS-136 President Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/J4zTMgKM/image.png",
+    "info": ""
   },
   {
     "id": 6,
-    "name": "Marlow Sideboard",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=80",
-    "info": "Warm wood finish and soft-close drawers for a refined statement piece.",
-    "price": 39999
-  },
-  {
-    "id": 13,
-    "name": "Drift Tall Cabinet",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "Tall vertical storage for books, ceramics, and collected objects.",
-    "price": 31999
-  },
-  {
-    "id": 14,
-    "name": "Nord Media Console",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80",
-    "info": "A streamlined media console with concealed shelving and cable cutouts.",
-    "price": 36999
-  },
-  {
-    "id": 21,
-    "name": "Moss Bookcase",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80",
-    "info": "Open shelving that balances display storage with a light visual footprint.",
-    "price": 17999
-  },
-  {
-    "id": 22,
-    "name": "Cedar Low Cabinet",
-    "category": "Storage",
-    "photo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
-    "info": "A low cabinet with warm wood tones and easy-access storage.",
-    "price": 25999
+    "name": "AS-216 Executive Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/8c5hg8GX/image.png",
+    "info": ""
   },
   {
     "id": 7,
-    "name": "Velora Bed Frame",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "An elevated platform bed with a plush upholstered headboard.",
-    "price": 45999
+    "name": "AS-208 Executive Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/B6yvbRDr/image.png",
+    "info": ""
   },
   {
     "id": 8,
-    "name": "Atelier Bed Set",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "Sculptural bed set paired with tonal linens for a calming retreat.",
-    "price": 52999
+    "name": "AS-212 Executive Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/LXrPqx12/image.png",
+    "info": ""
+  },
+  {
+    "id": 9,
+    "name": "AS-203 Executive Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/Bb98Ztdk/image.png",
+    "info": ""
+  },
+  {
+    "id": 10,
+    "name": "AS-301 Manager Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/tRBQH8W8/image.png",
+    "info": ""
+  },
+  {
+    "id": 11,
+    "name": "AS-307 Manager Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/qq55CVGf/image.png",
+    "info": ""
+  },
+  {
+    "id": 12,
+    "name": "AS-317 Manager Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/d0YSC9Gt/image.png",
+    "info": ""
+  },
+  {
+    "id": 13,
+    "name": "AS-312 Manager Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/Nj1dQrZy/image.png",
+    "info": ""
+  },
+  {
+    "id": 14,
+    "name": "AS-401 Mesh Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/0NVFqwJ7/image.png",
+    "info": ""
   },
   {
     "id": 15,
-    "name": "Sable Platform Bed",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
-    "info": "A minimal platform bed that brings quiet structure to the bedroom.",
-    "price": 48999
+    "name": "AS-412 Mesh Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/4x5Fz9PP/image.png",
+    "info": ""
   },
   {
     "id": 16,
-    "name": "Cloud Bedside Set",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
-    "info": "Matching bedside tables with soft corners and integrated drawers.",
-    "price": 22999
+    "name": "AS-435 Mesh Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/Njgdf0ts/image.png",
+    "info": ""
+  },
+  {
+    "id": 17,
+    "name": "AS-503 Visitor Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/65zdcfs7/image.png",
+    "info": ""
+  },
+  {
+    "id": 18,
+    "name": "Modular Workstation AS-01",
+    "category": "Workstation",
+    "photo": "https://i.postimg.cc/RZHZhvLY/image.png",
+    "info": ""
+  },
+  {
+    "id": 19,
+    "name": "Modular Workstation AS-06",
+    "category": "Workstation",
+    "photo": "https://i.postimg.cc/5jcK453n/image.png",
+    "info": ""
+  },
+  {
+    "id": 20,
+    "name": "Modular Workstation AS-05",
+    "category": "Workstation",
+    "photo": "https://i.postimg.cc/HLZgpK77/image.png",
+    "info": ""
+  },
+  {
+    "id": 21,
+    "name": "Modular Workstation AS-10",
+    "category": "Workstation",
+    "photo": "https://i.postimg.cc/9Q13pS1Q/image.png",
+    "info": ""
+  },
+  {
+    "id": 22,
+    "name": "Modular Workstation AS-11",
+    "category": "Workstation",
+    "photo": "https://i.postimg.cc/VLc3c1V8/image.png",
+    "info": ""
   },
   {
     "id": 23,
-    "name": "Aurora Upholstered Bed",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    "info": "A generous upholstered bed with a tall headboard and soft lines.",
-    "price": 56999
+    "name": "AS-03 Director Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/wT60VBrX/image.png",
+    "info": ""
   },
   {
     "id": 24,
-    "name": "Pine Nightstand Pair",
-    "category": "Beds",
-    "photo": "https://images.unsplash.com/photo-1560185008-b033106af2fc?auto=format&fit=crop&w=900&q=80",
-    "info": "A matching bedside pair for a coordinated bedroom setup.",
-    "price": 19999
+    "name": "AS-09 Director Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/RVVLtD3G/image.png",
+    "info": ""
+  },
+  {
+    "id": 25,
+    "name": "AS-08 Director Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/C5KnR9vp/image.png",
+    "info": ""
+  },
+  {
+    "id": 26,
+    "name": "AS-01 Executive Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/T3n13RRt/image.png",
+    "info": ""
+  },
+  {
+    "id": 27,
+    "name": "AS-04 Executive Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/7hpPqRdK/image.png",
+    "info": ""
+  },
+  {
+    "id": 28,
+    "name": "AS-07 Director Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/R0VWskBf/image.png",
+    "info": ""
+  },
+  {
+    "id": 29,
+    "name": "AS-02 Meeting Tables Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/HLhkSj3H/image.png",
+    "info": ""
+  },
+  {
+    "id": 30,
+    "name": "AS-03 Meeting Tables Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/jSqqtyFC/image.png",
+    "info": ""
+  },
+  {
+    "id": 31,
+    "name": "AS-04 Meeting Tables Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/y8NKwskw/image.png",
+    "info": ""
+  },
+  {
+    "id": 32,
+    "name": "AS-01 Reception Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/h40HgNWv/image.png",
+    "info": ""
+  },
+  {
+    "id": 33,
+    "name": "AS-04 Reception Tables Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/XJkDjBh4/image.png",
+    "info": ""
+  },
+  {
+    "id": 34,
+    "name": "AS-02 Computer Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/zXVpMQq7/image.png",
+    "info": ""
+  },
+  {
+    "id": 35,
+    "name": "AS-01 Office Storage Series",
+    "category": "Storage",
+    "photo": "https://i.postimg.cc/k5nSrVxs/image.png",
+    "info": ""
+  },
+  {
+    "id": 36,
+    "name": "AS-04 Office Storage Series",
+    "category": "Storage",
+    "photo": "https://i.postimg.cc/SNCVkMzY/image.png",
+    "info": ""
+  },
+  {
+    "id": 37,
+    "name": "AS-07 Office Storage Series",
+    "category": "Storage",
+    "photo": "https://i.postimg.cc/6Q5hrb1X/image.png",
+    "info": ""
+  },
+  {
+    "id": 38,
+    "name": "AS-08 Office Storage Series",
+    "category": "Storage",
+    "photo": "https://i.postimg.cc/BZ1BBKNJ/image.png",
+    "info": ""
+  },
+  {
+    "id": 39,
+    "name": "AS-02 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "https://i.postimg.cc/VsTHYwZY/image.png",
+    "info": ""
+  },
+  {
+    "id": 40,
+    "name": "AS-05 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "https://i.postimg.cc/GmBDb0f5/image.png",
+    "info": ""
+  },
+  {
+    "id": 41,
+    "name": "AS-18 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "https://i.postimg.cc/4yddwVkr/image.png",
+    "info": ""
+  },
+  {
+    "id": 42,
+    "name": "AS-02 Cafe Chair Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/5tXXWDPw/image.png",
+    "info": ""
+  },
+  {
+    "id": 43,
+    "name": "AS-10 Cafe Chair Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/kXwG67zT/image.png",
+    "info": ""
+  },
+  {
+    "id": 44,
+    "name": "AS-01 Cafe Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/B68ZKsTf/image.png",
+    "info": ""
+  },
+  {
+    "id": 45,
+    "name": "AS-03 Cafe Table Series",
+    "category": "Tables",
+    "photo": "https://i.postimg.cc/rFGVWfrr/image.png",
+    "info": ""
+  },
+  {
+    "id": 46,
+    "name": "AS-12 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/WpgTL5Xj/image.png",
+    "info": ""
+  },
+  {
+    "id": 47,
+    "name": "AS-02 Student Desk Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/3w4zjwcq/image.png",
+    "info": ""
+  },
+  {
+    "id": 48,
+    "name": "AS-01 Auditorium Chair Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/QxzbQqZd/image.png",
+    "info": ""
+  },
+  {
+    "id": 49,
+    "name": "AS-03 Auditorium Chair Series",
+    "category": "Chairs",
+    "photo": "https://i.postimg.cc/SR2XkCTc/image.png",
+    "info": ""
+  },
+  {
+    "id": 50,
+    "name": "AS-312 Lecturn & Podium Series",
+    "category": "Podium",
+    "photo": "https://i.postimg.cc/g0zKyc2Y/image.png",
+    "info": ""
+  },
+  {
+    "id": 51,
+    "name": "AS-316 Lecturn & Podium Series",
+    "category": "Podium",
+    "photo": "https://i.postimg.cc/bN10KSZC/image.png",
+    "info": ""
   }
 ]

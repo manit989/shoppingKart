@@ -7,8 +7,6 @@ import {
   Heading,
   HStack,
   Input,
-  List,
-  ListItem,
   SimpleGrid,
   Stack,
   Text,
@@ -19,12 +17,10 @@ import { Link } from "react-router";
 import { useCart } from "./components/cart-context";
 import { useColorModeValue } from "./components/ui/color-mode";
 
-const formatCurrency = (value: number) => `₹${value.toLocaleString("en-IN")}`;
-
 export default function Cart() {
   const { cart, updateQuantity, removeFromCart } = useCart();
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", notes: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
 
   const pageBg = useColorModeValue("#FFF7F0", "#1B120E");
   const cardBg = useColorModeValue("#FFFDF9", "#241812");
@@ -34,7 +30,28 @@ export default function Cart() {
   const panelBg = useColorModeValue("#F8EBDD", "#332017");
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+
+  const buildCartSummary = () =>
+    cart
+      .map(item => `${item.quantity} x ${item.product.title} (${item.product.category})`)
+      .join("\n");
+
+  const handleEnquirySubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const message = [
+      "Hello AVIMA Seating,",
+      "I would like to enquire about the following cart items:",
+      buildCartSummary() || "No items selected",
+      "",
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone}`,
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/91820022074?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <Box minH="100vh" bg={pageBg} px={{ base: 4, md: 8, lg: 12 }} py={{ base: 8, md: 12 }}>
@@ -59,7 +76,7 @@ export default function Cart() {
               Cart overview
             </Badge>
             <Heading as="h1" size="2xl" color={headingColor} mb={3}>
-              Your furniture cart
+              Your AVIMA cart
             </Heading>
             <Text color={mutedColor} fontSize={{ base: "md", md: "lg" }} maxW="2xl">
               Review the pieces you’ve selected, adjust quantities, and send an enquiry when you’re ready.
@@ -71,7 +88,7 @@ export default function Cart() {
               {[
                 { value: totalItems, label: "Items" },
                 { value: cart.length, label: "Unique products" },
-                { value: formatCurrency(subtotal), label: "Subtotal" },
+                { value: "Ready", label: "Enquiry status" },
               ].map(item => (
                 <Box key={item.label} bg={panelBg} borderWidth="1px" borderColor={borderColor} p={5}>
                   <Text fontSize="sm" color={mutedColor} mb={1}>
@@ -125,9 +142,6 @@ export default function Cart() {
                         <FiPlus />
                       </Button>
                     </HStack>
-                    <Text fontWeight="bold" color={headingColor}>
-                      {formatCurrency(item.product.price * item.quantity)}
-                    </Text>
                   </Flex>
                 </Box>
               ))}
@@ -135,72 +149,63 @@ export default function Cart() {
               <Box borderTopWidth="1px" borderColor={borderColor} />
 
               <Box pt={4}>
-                <Flex justify="space-between" align="center" mb={3}>
-                  <Text fontWeight="semibold" color={headingColor}>
-                    Subtotal
-                  </Text>
-                  <Text fontWeight="bold" color={headingColor}>
-                    {formatCurrency(subtotal)}
-                  </Text>
-                </Flex>
-
                 {!showEnquiryForm ? (
                   <Button colorPalette="brown" w="full" onClick={() => setShowEnquiryForm(true)}>
                     Send enquiry
                   </Button>
                 ) : (
-                  <Stack gap={3}>
-                    <Text fontSize="sm" color={mutedColor}>
-                      Share your details and we’ll follow up with availability and a quote.
-                    </Text>
-                    <List spacing={2} color={mutedColor} fontSize="sm">
-                      <ListItem>Custom delivery timeline</ListItem>
-                      <ListItem>Finishing and material guidance</ListItem>
-                      <ListItem>Project-style purchase support</ListItem>
-                    </List>
-                    <Box>
-                      <Text fontSize="sm" mb={1} color={headingColor}>
-                        Name
+                  <Box as="form" onSubmit={handleEnquirySubmit}>
+                    <Stack gap={3}>
+                      <Text fontSize="sm" color={mutedColor}>
+                        Share your details and we’ll open WhatsApp with your cart enquiry.
                       </Text>
-                      <Input
-                        value={formData.name}
-                        onChange={event => setFormData({ ...formData, name: event.target.value })}
-                        placeholder="Your name"
-                      />
-                    </Box>
-                    <Box>
-                      <Text fontSize="sm" mb={1} color={headingColor}>
-                        Email
-                      </Text>
-                      <Input
-                        type="email"
-                        value={formData.email}
-                        onChange={event => setFormData({ ...formData, email: event.target.value })}
-                        placeholder="you@example.com"
-                      />
-                    </Box>
-                    <Box>
-                      <Text fontSize="sm" mb={1} color={headingColor}>
-                        Phone
-                      </Text>
-                      <Input
-                        value={formData.phone}
-                        onChange={event => setFormData({ ...formData, phone: event.target.value })}
-                        placeholder="Phone number"
-                      />
-                    </Box>
-                    <Box>
-                      <Text fontSize="sm" mb={1} color={headingColor}>
-                        Notes
-                      </Text>
+                      <Box>
+                        <Text fontSize="sm" mb={1} color={headingColor}>
+                          Name
+                        </Text>
+                        <Input
+                          required
+                          value={formData.name}
+                          onChange={event => setFormData({ ...formData, name: event.target.value })}
+                          placeholder="Your name"
+                        />
+                      </Box>
+                      <Box>
+                        <Text fontSize="sm" mb={1} color={headingColor}>
+                          Email
+                        </Text>
+                        <Input
+                          required
+                          type="email"
+                          value={formData.email}
+                          onChange={event => setFormData({ ...formData, email: event.target.value })}
+                          placeholder="you@example.com"
+                        />
+                      </Box>
+                      <Box>
+                        <Text fontSize="sm" mb={1} color={headingColor}>
+                          Phone
+                        </Text>
+                        <Input
+                          required
+                          type="tel"
+                          inputMode="tel"
+                          value={formData.phone}
+                          onChange={event => setFormData({ ...formData, phone: event.target.value })}
+                          placeholder="Phone number"
+                        />
+                      </Box>
                       <Textarea
-                        value={formData.notes}
-                        onChange={event => setFormData({ ...formData, notes: event.target.value })}
-                        placeholder="Tell us about your preferred finish or delivery timeline"
+                        value={buildCartSummary()}
+                        readOnly
+                        minH="140px"
+                        placeholder="Cart summary will appear here"
                       />
-                    </Box>
-                    <Button colorPalette="brown">Submit enquiry</Button>
-                  </Stack>
+                      <Button colorPalette="brown" type="submit" isDisabled={cart.length === 0}>
+                        Submit enquiry on WhatsApp
+                      </Button>
+                    </Stack>
+                  </Box>
                 )}
               </Box>
             </Stack>

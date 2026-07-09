@@ -15,6 +15,7 @@ import "./index.css";
 import Products from "./Products";
 import { CartProvider } from "./components/cart-context";
 import Cart from "./Cart";
+import About from "./About";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "products",
         element: <Products />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
       {
         path: "cart",

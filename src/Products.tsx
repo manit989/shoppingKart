@@ -16,8 +16,6 @@ import { useCart } from "./components/cart-context";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { catalogProducts, catalogSections, catalogTags } from "./data/catalog";
 
-const formatCurrency = (value: number) => `₹${value.toLocaleString("en-IN")}`;
-
 export default function Products() {
   const { addToCart } = useCart();
 
@@ -32,13 +30,13 @@ export default function Products() {
     <Box minH="100vh" bg={pageBg} px={{ base: 4, md: 8, lg: 12 }} py={{ base: 8, md: 12 }}>
       <Box mb={8}>
         <Badge colorPalette="brown" mb={3}>
-          Collection overview
+          AVIMA seating catalogue
         </Badge>
         <Heading as="h1" size="2xl" color={headingColor} mb={3}>
-          Browse by room and function
+          Browse by category and solution
         </Heading>
         <Text color={mutedColor} maxW="3xl">
-          Scroll through the categories, compare pieces in a more visual format, and build a cart that maps to a real furnishing project.
+          Scroll through the categories, compare pieces in a more visual format, and build a selection for a real office furnishing project.
         </Text>
 
         <Wrap mt={5} gap={3}>
@@ -113,10 +111,7 @@ export default function Products() {
                       <Text fontSize="sm" color={mutedColor} mb={4}>
                         {product.description}
                       </Text>
-                      <Flex justify="space-between" align="center">
-                        <Text fontWeight="bold" fontSize="lg" color={headingColor}>
-                          {formatCurrency(product.price)}
-                        </Text>
+                      <Flex justify="end" align="center">
                         <Button size="sm" colorPalette="brown" onClick={() => addToCart(product)}>
                           <FiShoppingBag style={{ marginRight: "6px" }} />
                           Add

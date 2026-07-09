@@ -16,8 +16,6 @@ import { FiMinus, FiPlus, FiTrash2 } from "react-icons/fi";
 import { useCart } from "./cart-context";
 import { useColorModeValue } from "./ui/color-mode";
 
-const formatCurrency = (value: number) => `₹${value.toLocaleString("en-IN")}`;
-
 export default function CartDrawer() {
   const { cart, isCartOpen, closeCart, updateQuantity, removeFromCart } = useCart();
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
@@ -29,7 +27,6 @@ export default function CartDrawer() {
   const headingColor = useColorModeValue("brown.950", "#FFF7ED");
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
 
   return (
     <Drawer.Root open={isCartOpen} onOpenChange={e => (e.open ? undefined : closeCart())} placement="end">
@@ -63,7 +60,7 @@ export default function CartDrawer() {
                           {item.product.title}
                         </Text>
                         <Text fontSize="sm" color={mutedColor}>
-                          {formatCurrency(item.product.price)} each
+                          {item.product.category}
                         </Text>
                       </Box>
                       <Button size="sm" variant="ghost" onClick={() => removeFromCart(item.product.id)}>
@@ -83,17 +80,11 @@ export default function CartDrawer() {
                           <FiPlus />
                         </Button>
                       </HStack>
-                      <Text fontWeight="bold">{formatCurrency(item.product.price * item.quantity)}</Text>
                     </Flex>
                   </Box>
                 ))}
 
                 <Box borderTopWidth="1px" borderColor={borderColor} pt={4}>
-                  <Flex justify="space-between" align="center" mb={3}>
-                    <Text fontWeight="semibold">Subtotal</Text>
-                    <Text fontWeight="bold">{formatCurrency(subtotal)}</Text>
-                  </Flex>
-
                   {!showEnquiryForm ? (
                     <Button colorPalette="brown" w="full" onClick={() => setShowEnquiryForm(true)}>
                       Send enquiry

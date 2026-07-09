@@ -1,7 +1,7 @@
 import { Flex, Heading, HStack, Button, Box } from "@chakra-ui/react";
 import MegaMenu from "./MegaMenu";
 import { IoMdCart } from "react-icons/io";
-import { FaCouch } from "react-icons/fa6";
+import { GiOfficeChair } from "react-icons/gi";
 import { Link } from "react-router";
 import { ColorModeButton } from "@/components/ui/color-mode";
 
@@ -33,9 +33,9 @@ export default function Header() {
         <Link to="/">
           <HStack gap={2} align="center">
             <Box as="span" color="brown.200" display="inline-flex">
-              <FaCouch />
+              <GiOfficeChair />
             </Box>
-            <Box as="span">Furniture Shop</Box>
+            <Box as="span">AVIMA Seating</Box>
           </HStack>
         </Link>
       </Heading>
@@ -45,19 +45,29 @@ export default function Header() {
       </HStack>
 
       <HStack gap={{ base: 2, md: 4 }}>
-        <Button asChild bg="#4B2E22" color="#FFF7ED" _hover={{ bg: "#5B3728" }} _active={{ bg: "#3E261B" }} borderWidth="1px" borderColor="brown.700" borderRadius="md" px={{ base: 3, md: 4 }}>
+        <Button
+          asChild
+          bg="#4B2E22"
+          color="#FFF7ED"
+          _hover={{ bg: "#5B3728" }}
+          _active={{ bg: "#3E261B" }}
+          borderWidth="1px"
+          borderColor="brown.700"
+          borderRadius="md"
+          px={{ base: 3, md: 4 }}
+        >
           <Link to="/cart">
-          <Box
-            as="span"
-            display={{ base: "none", md: "inline" }}
-            mr="2"
-            fontSize="lg"
-            fontWeight="700"
-          >
-            Cart
-          </Box>
+            <Box
+              as="span"
+              display={{ base: "none", md: "inline" }}
+              mr="2"
+              fontSize="lg"
+              fontWeight="700"
+            >
+              Cart
+            </Box>
 
-          <IoMdCart size="20px" />
+            <IoMdCart size="20px" />
           </Link>
         </Button>
 
