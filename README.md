@@ -18,4 +18,4 @@ To run for production:
 bun start
 ```
 
-This project was created using `bun init` in bun v1.3.13.
+This project was created using `bun init` 
