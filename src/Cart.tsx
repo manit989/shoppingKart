@@ -52,7 +52,7 @@ export default function Cart() {
       `Phone: ${formData.phone}`,
     ].join("\n");
 
-    const whatsappUrl = `https://wa.me/18920022074?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918920022074?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
