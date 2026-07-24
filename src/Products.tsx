@@ -27,7 +27,12 @@ export default function Products() {
   const panelBg = useColorModeValue("#F8EBDD", "#332017");
 
   return (
-    <Box minH="100vh" bg={pageBg} px={{ base: 4, md: 8, lg: 12 }} py={{ base: 8, md: 12 }}>
+    <Box
+      minH="100vh"
+      bg={pageBg}
+      px={{ base: 4, md: 8, lg: 12 }}
+      py={{ base: 8, md: 12 }}
+    >
       <Box mb={8}>
         <Badge colorPalette="brown" mb={3}>
           AVIMA seating catalogue
@@ -36,11 +41,12 @@ export default function Products() {
           Browse by category and solution
         </Heading>
         <Text color={mutedColor} maxW="3xl">
-          Scroll through the categories, compare pieces in a more visual format, and build a selection for a real office furnishing project.
+          Scroll through the categories, compare pieces in a more visual format,
+          and build a selection for a real office furnishing project.
         </Text>
 
         <Wrap mt={5} gap={3}>
-          {catalogTags.map(tag => (
+          {catalogTags.map((tag) => (
             <WrapItem key={tag}>
               <Badge colorPalette="brown" variant="subtle" px={3} py={1}>
                 {tag}
@@ -57,9 +63,15 @@ export default function Products() {
       </Box>
 
       <Stack gap={8}>
-        {catalogSections.map(section => (
+        {catalogSections.map((section) => (
           <Box key={section.id} id={section.id} scrollMarginTop="90px">
-            <Flex justify="space-between" align="end" mb={4} gap={4} wrap="wrap">
+            <Flex
+              justify="space-between"
+              align="end"
+              mb={4}
+              gap={4}
+              wrap="wrap"
+            >
               <Box>
                 <Heading as="h3" size="lg" color={headingColor}>
                   {section.title}
@@ -81,8 +93,8 @@ export default function Products() {
               pr={2}
             >
               {catalogProducts
-                .filter(product => product.sectionId === section.id)
-                .map(product => (
+                .filter((product) => product.sectionId === section.id)
+                .map((product) => (
                   <Box
                     key={product.id}
                     borderWidth="1px"
@@ -97,7 +109,11 @@ export default function Products() {
                       <img
                         src={product.image}
                         alt={product.title}
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                        }}
                       />
                     </AspectRatio>
 
@@ -112,7 +128,11 @@ export default function Products() {
                         {product.description}
                       </Text>
                       <Flex justify="end" align="center">
-                        <Button size="sm" colorPalette="brown" onClick={() => addToCart(product)}>
+                        <Button
+                          size="sm"
+                          colorPalette="brown"
+                          onClick={() => addToCart(product)}
+                        >
                           <FiShoppingBag style={{ marginRight: "6px" }} />
                           Add
                         </Button>
