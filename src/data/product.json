@@ -330,27 +330,55 @@
   },
   {
     "id": 48,
+    "name": "AS-01 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/hGTp9WM0/image.png",
+    "info": ""
+  },
+  {
+    "id": 49,
+    "name": "AS-04 Student Desk Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/pdqV2Tny/image.png",
+    "info": ""
+  },
+  {
+    "id": 50,
+    "name": "AS-08 Student Desk Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/T1r3vcV0/image.png",
+    "info": ""
+  },
+  {
+    "id": 51,
+    "name": "AS-11 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "https://i.postimg.cc/WzjPgcZK/image.png",
+    "info": ""
+  },
+  {
+    "id": 52,
     "name": "AS-01 Auditorium Chair Series",
     "category": "Chairs",
     "photo": "https://i.postimg.cc/QxzbQqZd/image.png",
     "info": ""
   },
   {
-    "id": 49,
+    "id": 53,
     "name": "AS-03 Auditorium Chair Series",
     "category": "Chairs",
     "photo": "https://i.postimg.cc/SR2XkCTc/image.png",
     "info": ""
   },
   {
-    "id": 50,
+    "id": 54,
     "name": "AS-312 Lecturn & Podium Series",
     "category": "Podium",
     "photo": "https://i.postimg.cc/g0zKyc2Y/image.png",
     "info": ""
   },
   {
-    "id": 51,
+    "id": 55,
     "name": "AS-316 Lecturn & Podium Series",
     "category": "Podium",
     "photo": "https://i.postimg.cc/bN10KSZC/image.png",
