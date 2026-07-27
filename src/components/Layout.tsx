@@ -1,5 +1,13 @@
 import { Outlet } from "react-router";
-import { Box, Container, Flex, HStack, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  HStack,
+  Link,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import Header from "./Header";
 
 export default function Layout() {
@@ -14,11 +22,17 @@ export default function Layout() {
         color="#FFF7ED"
       >
         <HStack gap={3} flexWrap="wrap" justify="center">
-          <Text fontSize="sm" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase">
+          <Text
+            fontSize="sm"
+            fontWeight="700"
+            letterSpacing="0.12em"
+            textTransform="uppercase"
+          >
             AVIMA Seating
           </Text>
           <Text fontSize="sm" opacity={0.9}>
-            Smart office furniture solutions for seating, storage, and workstations.
+            Smart office furniture solutions for seating, storage, and
+            workstations.
           </Text>
         </HStack>
       </Flex>
@@ -29,7 +43,11 @@ export default function Layout() {
         <Outlet />
       </Box>
 
-      <Box as="footer" px={{ base: 4, md: 8, lg: 12 }} py={{ base: 10, md: 14 }}>
+      <Box
+        as="footer"
+        px={{ base: 4, md: 8, lg: 12 }}
+        py={{ base: 10, md: 14 }}
+      >
         <Container maxW="7xl" px={0}>
           <SimpleGrid columns={{ base: 1, md: 3 }} gap={8}>
             <Box>
@@ -43,12 +61,20 @@ export default function Layout() {
                 AVIMA
               </Text>
               <Text color="brown.800" maxW="sm">
-                Smart office furniture solutions designed for calm, practical, and long-lasting workspaces.
+                Smart office furniture solutions designed for calm, practical,
+                and long-lasting workspaces.
               </Text>
             </Box>
 
             <Box>
-              <Text fontSize="sm" fontWeight="700" letterSpacing="0.14em" textTransform="uppercase" color="brown.700" mb={3}>
+              <Text
+                fontSize="sm"
+                fontWeight="700"
+                letterSpacing="0.14em"
+                textTransform="uppercase"
+                color="brown.700"
+                mb={3}
+              >
                 Explore
               </Text>
               <HStack gap={4} flexWrap="wrap">
@@ -60,7 +86,14 @@ export default function Layout() {
             </Box>
 
             <Box>
-              <Text fontSize="sm" fontWeight="700" letterSpacing="0.14em" textTransform="uppercase" color="brown.700" mb={3}>
+              <Text
+                fontSize="sm"
+                fontWeight="700"
+                letterSpacing="0.14em"
+                textTransform="uppercase"
+                color="brown.700"
+                mb={3}
+              >
                 Services
               </Text>
               <Text color="brown.800">Interior guidance</Text>
