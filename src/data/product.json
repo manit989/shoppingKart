@@ -3,385 +3,385 @@
     "id": 1,
     "name": "AS-102 President Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/L6LTVpyq/image.png",
+    "photo": "/assets/products/product-1.png",
     "info": ""
   },
   {
     "id": 2,
     "name": "AS-106 President Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/Nj8dQcms/image.png",
+    "photo": "/assets/products/product-2.png",
     "info": ""
   },
   {
     "id": 3,
     "name": "AS-113 President Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/MZM2qnTx/image.png",
+    "photo": "/assets/products/product-3.png",
     "info": ""
   },
   {
     "id": 4,
     "name": "AS-137 President Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/mD7n1HFx/image.png",
+    "photo": "/assets/products/product-4.png",
     "info": ""
   },
   {
     "id": 5,
     "name": "AS-136 President Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/J4zTMgKM/image.png",
+    "photo": "/assets/products/product-5.png",
     "info": ""
   },
   {
     "id": 6,
     "name": "AS-216 Executive Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/8c5hg8GX/image.png",
+    "photo": "/assets/products/product-6.png",
     "info": ""
   },
   {
     "id": 7,
     "name": "AS-208 Executive Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/B6yvbRDr/image.png",
+    "photo": "/assets/products/product-7.png",
     "info": ""
   },
   {
     "id": 8,
     "name": "AS-212 Executive Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/LXrPqx12/image.png",
+    "photo": "/assets/products/product-8.png",
     "info": ""
   },
   {
     "id": 9,
     "name": "AS-203 Executive Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/Bb98Ztdk/image.png",
+    "photo": "/assets/products/product-9.png",
     "info": ""
   },
   {
     "id": 10,
     "name": "AS-301 Manager Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/tRBQH8W8/image.png",
+    "photo": "/assets/products/product-10.png",
     "info": ""
   },
   {
     "id": 11,
     "name": "AS-307 Manager Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/qq55CVGf/image.png",
+    "photo": "/assets/products/product-11.png",
     "info": ""
   },
   {
     "id": 12,
     "name": "AS-317 Manager Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/d0YSC9Gt/image.png",
+    "photo": "/assets/products/product-12.png",
     "info": ""
   },
   {
     "id": 13,
     "name": "AS-312 Manager Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/Nj1dQrZy/image.png",
+    "photo": "/assets/products/product-13.png",
     "info": ""
   },
   {
     "id": 14,
     "name": "AS-401 Mesh Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/0NVFqwJ7/image.png",
+    "photo": "/assets/products/product-14.png",
     "info": ""
   },
   {
     "id": 15,
     "name": "AS-412 Mesh Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/4x5Fz9PP/image.png",
+    "photo": "/assets/products/product-15.png",
     "info": ""
   },
   {
     "id": 16,
     "name": "AS-435 Mesh Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/Njgdf0ts/image.png",
+    "photo": "/assets/products/product-16.png",
     "info": ""
   },
   {
     "id": 17,
     "name": "AS-503 Visitor Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/65zdcfs7/image.png",
+    "photo": "/assets/products/product-17.png",
     "info": ""
   },
   {
     "id": 18,
     "name": "Modular Workstation AS-01",
     "category": "Workstation",
-    "photo": "https://i.postimg.cc/RZHZhvLY/image.png",
+    "photo": "/assets/products/product-18.png",
     "info": ""
   },
   {
     "id": 19,
     "name": "Modular Workstation AS-06",
     "category": "Workstation",
-    "photo": "https://i.postimg.cc/5jcK453n/image.png",
+    "photo": "/assets/products/product-19.png",
     "info": ""
   },
   {
     "id": 20,
     "name": "Modular Workstation AS-05",
     "category": "Workstation",
-    "photo": "https://i.postimg.cc/HLZgpK77/image.png",
+    "photo": "/assets/products/product-20.png",
     "info": ""
   },
   {
     "id": 21,
     "name": "Modular Workstation AS-10",
     "category": "Workstation",
-    "photo": "https://i.postimg.cc/9Q13pS1Q/image.png",
+    "photo": "/assets/products/product-21.png",
     "info": ""
   },
   {
     "id": 22,
     "name": "Modular Workstation AS-11",
     "category": "Workstation",
-    "photo": "https://i.postimg.cc/VLc3c1V8/image.png",
+    "photo": "/assets/products/product-22.png",
     "info": ""
   },
   {
     "id": 23,
     "name": "AS-03 Director Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/wT60VBrX/image.png",
+    "photo": "/assets/products/product-23.png",
     "info": ""
   },
   {
     "id": 24,
     "name": "AS-09 Director Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/RVVLtD3G/image.png",
+    "photo": "/assets/products/product-24.png",
     "info": ""
   },
   {
     "id": 25,
     "name": "AS-08 Director Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/C5KnR9vp/image.png",
+    "photo": "/assets/products/product-25.png",
     "info": ""
   },
   {
     "id": 26,
     "name": "AS-01 Executive Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/T3n13RRt/image.png",
+    "photo": "/assets/products/product-26.png",
     "info": ""
   },
   {
     "id": 27,
     "name": "AS-04 Executive Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/7hpPqRdK/image.png",
+    "photo": "/assets/products/product-27.png",
     "info": ""
   },
   {
     "id": 28,
     "name": "AS-07 Director Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/R0VWskBf/image.png",
+    "photo": "/assets/products/product-28.png",
     "info": ""
   },
   {
     "id": 29,
     "name": "AS-02 Meeting Tables Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/HLhkSj3H/image.png",
+    "photo": "/assets/products/product-29.png",
     "info": ""
   },
   {
     "id": 30,
     "name": "AS-03 Meeting Tables Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/jSqqtyFC/image.png",
+    "photo": "/assets/products/product-30.png",
     "info": ""
   },
   {
     "id": 31,
     "name": "AS-04 Meeting Tables Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/y8NKwskw/image.png",
+    "photo": "/assets/products/product-31.png",
     "info": ""
   },
   {
     "id": 32,
     "name": "AS-01 Reception Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/h40HgNWv/image.png",
+    "photo": "/assets/products/product-32.png",
     "info": ""
   },
   {
     "id": 33,
     "name": "AS-04 Reception Tables Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/XJkDjBh4/image.png",
+    "photo": "/assets/products/product-33.png",
     "info": ""
   },
   {
     "id": 34,
     "name": "AS-02 Computer Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/zXVpMQq7/image.png",
+    "photo": "/assets/products/product-34.png",
     "info": ""
   },
   {
     "id": 35,
     "name": "AS-01 Office Storage Series",
     "category": "Storage",
-    "photo": "https://i.postimg.cc/k5nSrVxs/image.png",
+    "photo": "/assets/products/product-35.png",
     "info": ""
   },
   {
     "id": 36,
     "name": "AS-04 Office Storage Series",
     "category": "Storage",
-    "photo": "https://i.postimg.cc/SNCVkMzY/image.png",
+    "photo": "/assets/products/product-36.png",
     "info": ""
   },
   {
     "id": 37,
     "name": "AS-07 Office Storage Series",
     "category": "Storage",
-    "photo": "https://i.postimg.cc/6Q5hrb1X/image.png",
+    "photo": "/assets/products/product-37.png",
     "info": ""
   },
   {
     "id": 38,
     "name": "AS-08 Office Storage Series",
     "category": "Storage",
-    "photo": "https://i.postimg.cc/BZ1BBKNJ/image.png",
+    "photo": "/assets/products/product-38.png",
     "info": ""
   },
   {
     "id": 39,
     "name": "AS-02 Office Sofa Series",
     "category": "Sofa",
-    "photo": "https://i.postimg.cc/VsTHYwZY/image.png",
+    "photo": "/assets/products/product-39.png",
     "info": ""
   },
   {
     "id": 40,
     "name": "AS-05 Office Sofa Series",
     "category": "Sofa",
-    "photo": "https://i.postimg.cc/GmBDb0f5/image.png",
+    "photo": "/assets/products/product-40.png",
     "info": ""
   },
   {
     "id": 41,
     "name": "AS-18 Office Sofa Series",
     "category": "Sofa",
-    "photo": "https://i.postimg.cc/4yddwVkr/image.png",
+    "photo": "/assets/products/product-41.png",
     "info": ""
   },
   {
     "id": 42,
     "name": "AS-02 Cafe Chair Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/5tXXWDPw/image.png",
+    "photo": "/assets/products/product-42.png",
     "info": ""
   },
   {
     "id": 43,
     "name": "AS-10 Cafe Chair Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/kXwG67zT/image.png",
+    "photo": "/assets/products/product-43.png",
     "info": ""
   },
   {
     "id": 44,
     "name": "AS-01 Cafe Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/B68ZKsTf/image.png",
+    "photo": "/assets/products/product-44.png",
     "info": ""
   },
   {
     "id": 45,
     "name": "AS-03 Cafe Table Series",
     "category": "Tables",
-    "photo": "https://i.postimg.cc/rFGVWfrr/image.png",
+    "photo": "/assets/products/product-45.png",
     "info": ""
   },
   {
     "id": 46,
     "name": "AS-12 Student Furniture Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/WpgTL5Xj/image.png",
+    "photo": "/assets/products/product-46.png",
     "info": ""
   },
   {
     "id": 47,
     "name": "AS-02 Student Desk Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/3w4zjwcq/image.png",
+    "photo": "/assets/products/product-47.png",
     "info": ""
   },
   {
     "id": 48,
     "name": "AS-01 Student Furniture Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/hGTp9WM0/image.png",
+    "photo": "/assets/products/product-48.png",
     "info": ""
   },
   {
     "id": 49,
     "name": "AS-04 Student Desk Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/pdqV2Tny/image.png",
+    "photo": "/assets/products/product-49.png",
     "info": ""
   },
   {
     "id": 50,
     "name": "AS-08 Student Desk Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/T1r3vcV0/image.png",
+    "photo": "/assets/products/product-50.png",
     "info": ""
   },
   {
     "id": 51,
     "name": "AS-11 Student Furniture Series",
     "category": "Student Furniture",
-    "photo": "https://i.postimg.cc/WzjPgcZK/image.png",
+    "photo": "/assets/products/product-51.png",
     "info": ""
   },
   {
     "id": 52,
     "name": "AS-01 Auditorium Chair Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/QxzbQqZd/image.png",
+    "photo": "/assets/products/product-52.png",
     "info": ""
   },
   {
     "id": 53,
     "name": "AS-03 Auditorium Chair Series",
     "category": "Chairs",
-    "photo": "https://i.postimg.cc/SR2XkCTc/image.png",
+    "photo": "/assets/products/product-53.png",
     "info": ""
   },
   {
     "id": 54,
     "name": "AS-312 Lecturn & Podium Series",
     "category": "Podium",
-    "photo": "https://i.postimg.cc/g0zKyc2Y/image.png",
+    "photo": "/assets/products/product-54.png",
     "info": ""
   },
   {
     "id": 55,
     "name": "AS-316 Lecturn & Podium Series",
     "category": "Podium",
-    "photo": "https://i.postimg.cc/bN10KSZC/image.png",
+    "photo": "/assets/products/product-55.png",
     "info": ""
   }
 ]
