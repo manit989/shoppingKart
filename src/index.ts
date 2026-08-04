@@ -29,6 +29,16 @@ const server = serve({
       return new Response("Not found", { status: 404 });
     },
 
+    "/assets/products/:filename": async (req) => {
+      const filename = req.params.filename;
+      const filePath = `./assets/products/${filename}`;
+      const file = Bun.file(filePath);
+      if (await file.exists()) {
+        return new Response(file);
+      }
+      return new Response("Not found", { status: 404 });
+    },
+
     "/api/hello": {
       async GET(req) {
         return Response.json({
