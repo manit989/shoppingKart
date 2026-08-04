@@ -1,23 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Design tokens ─────────────────────────────── */
+:root {
+  --color-primary: #6C5CE7;
+  --color-primary-light: #A78BFA;
+  --color-secondary: #00B894;
+  --color-secondary-light: #34D399;
+
+  --page-bg-light: #FAFBFF;
+  --page-bg-dark: #0A0E1A;
+
+  --heading-light: #1A1D2E;
+  --heading-dark: #F0F1F5;
+
+  --body-light: #5A5E72;
+  --body-dark: #9CA3AF;
+
+  --border-light: rgba(108, 92, 231, 0.12);
+  --border-dark: rgba(167, 139, 250, 0.15);
+
+  --glass-light: rgba(255, 255, 255, 0.72);
+  --glass-dark: rgba(15, 20, 40, 0.72);
+}
 
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
   padding: 0;
 }
 
+/* ── Keyframe animations ──────────────────────── */
+
 @keyframes fadeRise {
   from {
     opacity: 0;
     transform: translateY(28px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes floatOrb {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -25px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 15px) scale(0.95);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.3),
+                0 0 60px rgba(108, 92, 231, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.5),
+                0 0 80px rgba(108, 92, 231, 0.2);
+  }
+}
+
+@keyframes slideInUnderline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ── Glassmorphism utility ────────────────────── */
+
+.glass-panel {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+
+/* ── Decorative orbs ──────────────────────────── */
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: floatOrb 8s ease-in-out infinite;
+}
+
+.orb-primary {
+  background: radial-gradient(circle, rgba(108, 92, 231, 0.35), transparent 70%);
+}
+
+.orb-secondary {
+  background: radial-gradient(circle, rgba(0, 184, 148, 0.25), transparent 70%);
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.orb-accent {
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.2), transparent 70%);
+  animation-delay: -5s;
+  animation-duration: 12s;
+}
+
+/* ── Glow card hover effect ───────────────────── */
+
+.glow-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 231, 0),
+    rgba(108, 92, 231, 0),
+    rgba(108, 92, 231, 0)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: background 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glow-card:hover::before {
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 231, 0.5),
+    rgba(0, 184, 148, 0.3),
+    rgba(167, 139, 250, 0.5)
+  );
+}
+
+/* ── Animated link underline ──────────────────── */
+
+.animated-link {
+  position: relative;
+  text-decoration: none !important;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ── CTA glow pulse ──────────────────────────── */
+
+.cta-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* ── Scrollbar styling ────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(108, 92, 231, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 92, 231, 0.45);
 }
