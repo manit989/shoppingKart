@@ -3,7 +3,7 @@ import {
   Container,
   Heading,
   Image,
-  SimpleGrid,
+  Flex,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -18,6 +18,10 @@ const clients = [
   { name: "GD Goenka University", logo: "/assets/customers/GdGoenka.jpeg" },
   { name: "Adarsh World School", logo: "/assets/customers/adarshSchool.png" },
   { name: "Amity University", logo: "/assets/customers/amity.jpg" },
+  { name: "Indian Railways", logo: "/assets/customers/IndianRailways.png" },
+  { name: "Jal Shakti Department", logo: "/assets/customers/JalShakti.jpg" },
+  { name: "Pusa Institute Delhi", logo: "/assets/customers/PusaDelhi.jpeg" },
+  { name: "UP Police", logo: "/assets/customers/UpPolice.jpg" },
 ];
 
 export default function Clients() {
@@ -124,14 +128,16 @@ export default function Clients() {
       {/* Clients Grid */}
       <Box px={{ base: 4, md: 8, lg: 12 }} py={{ base: 10, md: 16 }}>
         <Container maxW="5xl" px={0}>
-          <SimpleGrid
+          <Flex
             ref={gridRef}
-            columns={{ base: 1, sm: 2, md: 3 }}
+            wrap="wrap"
+            justify="center"
             gap={8}
           >
             {clients.map((client, i) => (
               <MotionBox
                 key={client.name}
+                w={{ base: "100%", sm: "calc(50% - 1rem)", md: "calc(33.333% - 1.33rem)" }}
                 bg={cardBg}
                 borderWidth="1px"
                 borderColor={borderColor}
@@ -194,7 +200,7 @@ export default function Clients() {
                 </Box>
               </MotionBox>
             ))}
-          </SimpleGrid>
+          </Flex>
         </Container>
       </Box>
 

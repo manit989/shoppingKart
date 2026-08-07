@@ -19,9 +19,40 @@ const server = serve({
       },
     },
 
+    "/brochure.pdf": {
+      GET() {
+        return new Response(Bun.file("./brochure.pdf"), {
+          headers: {
+            "Content-Type": "application/pdf",
+            "Content-Disposition": 'attachment; filename="brochure.pdf"',
+          },
+        });
+      },
+    },
+
+    "/assets/logo.jpg": {
+      GET() {
+        return new Response(Bun.file("./assets/logo.jpg"), {
+          headers: {
+            "Content-Type": "image/jpeg",
+          },
+        });
+      },
+    },
+
     "/assets/customers/:filename": async (req) => {
       const filename = req.params.filename;
       const filePath = `./assets/customers/${filename}`;
+      const file = Bun.file(filePath);
+      if (await file.exists()) {
+        return new Response(file);
+      }
+      return new Response("Not found", { status: 404 });
+    },
+
+    "/assets/carousel/:filename": async (req) => {
+      const filename = req.params.filename;
+      const filePath = `./assets/carousel/${filename}`;
       const file = Bun.file(filePath);
       if (await file.exists()) {
         return new Response(file);

@@ -18,6 +18,7 @@ import { FaHammer, FaLeaf, FaTruck } from "react-icons/fa6";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import Carousel from "./components/Carousel";
 import "./index.css";
 
 /* ── Motion-enhanced Chakra primitives ─────────── */
@@ -327,6 +328,9 @@ export function App() {
           </GridItem>
         </Grid>
       </Flex>
+
+      {/* ── Carousel Section ──────────────────────── */}
+      <Carousel />
 
       {/* ── About Section ───────────────────────── */}
       <Box px={{ base: 4, md: 8, lg: 12 }} py={{ base: 10, md: 16 }}>
