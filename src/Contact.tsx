@@ -62,7 +62,7 @@ export default function Contact() {
     {
       icon: FiMail,
       title: "Email Us",
-      details: ["avimaseating@gmail.com"],
+      details: ["avimaseating@gmail.com", "sales@avima.co.in"],
     },
     {
       icon: FiGlobe,
@@ -71,12 +71,22 @@ export default function Contact() {
     },
     {
       icon: FiMapPin,
-      title: "Our Location",
+      title: "Headquarters — Lucknow",
       details: [
         "Plot No. 217, Ramji Nagar",
         "Near Naira Petrol Pump, Asti Road",
         "Bakshi Ka Talab, Lucknow",
         "Uttar Pradesh, 226201",
+      ],
+    },
+    {
+      icon: FiMapPin,
+      title: "Our Branches",
+      details: [
+        "Gorakhpur",
+        "Gonda",
+        "Noida",
+        "Delhi",
       ],
     },
   ];

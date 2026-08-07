@@ -383,5 +383,110 @@
     "category": "Podium",
     "photo": "/assets/products/product-55.png",
     "info": ""
+  },
+  {
+    "id": 56,
+    "name": "AS-311 Lecturn & Podium Series",
+    "category": "Podium",
+    "photo": "/assets/products/as311.jpg",
+    "info": ""
+  },
+  {
+    "id": 57,
+    "name": "Lecturn & Podium",
+    "category": "Podium",
+    "photo": "/assets/products/product-57.jpg",
+    "info": ""
+  },
+  {
+    "id": 58,
+    "name": "Lecturn & Podium",
+    "category": "Podium",
+    "photo": "/assets/products/product-58.jpg",
+    "info": ""
+  },
+  {
+    "id": 59,
+    "name": "Lecturn & Podium",
+    "category": "Podium",
+    "photo": "/assets/products/product-59.jpg",
+    "info": ""
+  },
+  {
+    "id": 60,
+    "name": "AS-01 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "/assets/products/product-60.png",
+    "info": ""
+  },
+  {
+    "id": 61,
+    "name": "AS-04 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "/assets/products/product-61.png",
+    "info": ""
+  },
+  {
+    "id": 62,
+    "name": "AS-03 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "/assets/products/product-62.png",
+    "info": ""
+  },
+  {
+    "id": 63,
+    "name": "AS-13 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "/assets/products/product-63.png",
+    "info": ""
+  },
+  {
+    "id": 64,
+    "name": "AS-11 Office Sofa Series",
+    "category": "Sofa",
+    "photo": "/assets/products/product-64.png",
+    "info": ""
+  },
+  {
+    "id": 65,
+    "name": "AS-02 Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-65.png",
+    "info": ""
+  },
+  {
+    "id": 66,
+    "name": "AS-03 Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-66.png",
+    "info": ""
+  },
+  {
+    "id": 67,
+    "name": "Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-67.jpg",
+    "info": ""
+  },
+  {
+    "id": 68,
+    "name": "Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-68.jpg",
+    "info": ""
+  },
+  {
+    "id": 69,
+    "name": "Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-69.jpg",
+    "info": ""
+  },
+  {
+    "id": 70,
+    "name": "Office Storage Series",
+    "category": "Storage",
+    "photo": "/assets/products/product-70.jpg",
+    "info": ""
   }
 ]
