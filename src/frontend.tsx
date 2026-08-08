@@ -9,6 +9,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { HelmetProvider } from "react-helmet-async";
 import { Provider } from "./components/ui/provider";
 import Layout from "./components/Layout";
 import "./index.css";
@@ -18,6 +19,7 @@ import Cart from "./Cart";
 import About from "./About";
 import Contact from "./Contact";
 import Clients from "./Clients";
+import Career from "./Career";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,10 @@ const router = createBrowserRouter([
         element: <Clients />,
       },
       {
+        path: "career",
+        element: <Career />,
+      },
+      {
         path: "cart",
         element: <Cart />,
       },
@@ -59,11 +65,13 @@ const router = createBrowserRouter([
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <Provider>
-      <CartProvider>
-        <RouterProvider router={router} />
-      </CartProvider>
-    </Provider>
+    <HelmetProvider>
+      <Provider>
+        <CartProvider>
+          <RouterProvider router={router} />
+        </CartProvider>
+      </Provider>
+    </HelmetProvider>
   </StrictMode>
 );
 

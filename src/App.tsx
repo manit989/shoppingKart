@@ -19,6 +19,7 @@ import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import Carousel from "./components/Carousel";
+import SEO from "./components/SEO";
 import "./index.css";
 
 /* ── Motion-enhanced Chakra primitives ─────────── */
@@ -142,6 +143,11 @@ export function App() {
 
   return (
     <Box bg={pageBg} minH="100vh">
+      <SEO 
+        title="Smart Office Furniture Solutions" 
+        description="AVIMA Seating provides smart, comfortable, and durable office furniture solutions. Explore our legacy of craftsmanship and modern ergonomic seating."
+        keywords="office furniture, ergonomic seating, workstations, AVIMA seating, smart office solutions"
+      />
       {/* ── Hero Section ────────────────────────── */}
       <Flex
         minH={{ base: "90vh", md: "115vh" }}

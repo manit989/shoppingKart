@@ -10,6 +10,7 @@ import {
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import SEO from "./components/SEO";
 import "./index.css";
 
 const MotionBox = motion.create(Box);
@@ -44,6 +45,10 @@ export default function Clients() {
 
   return (
     <Box bg={pageBg} minH="100vh">
+      <SEO 
+        title="Our Clients & Partners" 
+        description="Trusted by leading universities, schools, and institutions across India. See the clients who rely on AVIMA Seating for their furniture needs."
+      />
       {/* Hero Section */}
       <Box
         pt={{ base: 16, md: 24 }}

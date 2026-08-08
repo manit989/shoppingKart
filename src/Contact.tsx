@@ -14,6 +14,7 @@ import { FiPhone, FiMail, FiGlobe, FiMapPin, FiStar } from "react-icons/fi";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -56,7 +57,7 @@ export default function Contact() {
   const contactMethods = [
     {
       icon: FiPhone,
-      title: "Call Us",
+      title: "Contact Us",
       details: ["+91 89200 22074", "+91 99999 28595"],
     },
     {
@@ -71,7 +72,7 @@ export default function Contact() {
     },
     {
       icon: FiMapPin,
-      title: "Headquarters — Lucknow",
+      title: "Headquarter - Lucknow",
       details: [
         "Plot No. 217, Ramji Nagar",
         "Near Naira Petrol Pump, Asti Road",
@@ -98,6 +99,10 @@ export default function Contact() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 12 }}
     >
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with AVIMA Seating. Headquartered in Lucknow with branches across India, we are here to help you create your ideal workspace."
+      />
       <AnimatedSection>
         <Box mb={12} textAlign="center">
           <Badge

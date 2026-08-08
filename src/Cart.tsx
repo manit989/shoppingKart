@@ -17,6 +17,7 @@ import { Link } from "react-router";
 import { useCart } from "./components/cart-context";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion } from "motion/react";
+import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -78,6 +79,10 @@ export default function Cart() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 12 }}
     >
+      <SEO 
+        title="Your Cart" 
+        description="Review your selected AVIMA seating products and send a direct enquiry to our team for a personalized quote."
+      />
       <MotionBox
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}

@@ -115,15 +115,6 @@ export default function Layout() {
                   About
                 </Link>
                 <Link
-                  href="/contact"
-                  className="animated-link"
-                  color={bodyColor}
-                  _hover={{ color: linkHoverColor }}
-                  transition="color 0.25s ease"
-                >
-                  Contact
-                </Link>
-                <Link
                   href="/product"
                   className="animated-link"
                   color={bodyColor}
@@ -133,15 +124,6 @@ export default function Layout() {
                   Products
                 </Link>
                 <Link
-                  href="/clients"
-                  className="animated-link"
-                  color={bodyColor}
-                  _hover={{ color: linkHoverColor }}
-                  transition="color 0.25s ease"
-                >
-                  Clients
-                </Link>
-                <Link
                   href="/cart"
                   className="animated-link"
                   color={bodyColor}
@@ -149,6 +131,33 @@ export default function Layout() {
                   transition="color 0.25s ease"
                 >
                   Cart
+                </Link>
+                <Link
+                  href="/clients"
+                  className="animated-link"
+                  color={bodyColor}
+                  _hover={{ color: linkHoverColor }}
+                  transition="color 0.25s ease"
+                >
+                  Customers
+                </Link>
+                <Link
+                  href="/career"
+                  className="animated-link"
+                  color={bodyColor}
+                  _hover={{ color: linkHoverColor }}
+                  transition="color 0.25s ease"
+                >
+                  Career
+                </Link>
+                <Link
+                  href="/contact"
+                  className="animated-link"
+                  color={bodyColor}
+                  _hover={{ color: linkHoverColor }}
+                  transition="color 0.25s ease"
+                >
+                  Contact Us
                 </Link>
               </HStack>
             </Box>
