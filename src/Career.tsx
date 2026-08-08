@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Badge,
   Box,
@@ -8,7 +10,6 @@ import {
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -55,10 +56,7 @@ export default function Career() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 12 }}
     >
-      <SEO 
-        title="Careers - Join Our Team" 
-        description="Join the AVIMA Seating team. We are always looking for talented individuals to help us craft the future of comfortable, smart office furniture."
-      />
+      
       <AnimatedSection>
         <Box mb={10} textAlign="center">
           <Badge

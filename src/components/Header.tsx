@@ -1,3 +1,5 @@
+"use client";
+
 import { Container, Flex } from "@chakra-ui/react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useColorModeValue } from "@/components/ui/color-mode";
@@ -42,11 +44,9 @@ export default function Header() {
       zIndex="999"
       bg={headerBg}
       backdropFilter="blur(16px)"
-      WebkitBackdropFilter="blur(16px)"
       borderBottomWidth="1px"
       borderColor={borderColor}
-      style={{ boxShadow: shadow, paddingTop: py, paddingBottom: py }}
-      transition="background-color 0.3s ease"
+      style={{ boxShadow: shadow, paddingTop: py, paddingBottom: py, transition: "background-color 0.3s ease" }}
     >
       <Container maxW="7xl" px={{ base: 4, md: 8, lg: 12 }}>
         <Flex alignItems="center" justifyContent="space-between">

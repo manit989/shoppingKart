@@ -1,11 +1,12 @@
-import { Box } from "@chakra-ui/react";
-import { Link } from "react-router";
+"use client";
+
+import { Box, Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function HeaderLogo() {
   return (
-    <Link to="/">
-      <Box
-        as="img"
+    <Link href="/">
+      <Image
         src="/assets/logo.jpg"
         alt="Avima Seating Logo"
         h={{ base: "40px", md: "48px" }}

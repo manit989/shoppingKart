@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Badge,
   Box,
@@ -15,7 +17,6 @@ import { FiDownload, FiCheckCircle, FiHeart, FiShield, FiStar, FiUsers, FiAward,
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -81,10 +82,7 @@ export default function About() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 16 }}
     >
-      <SEO 
-        title="About Us" 
-        description="Learn about AVIMA Seating's legacy since 1985. We combine traditional craftsmanship with modern technology to design furniture around people."
-      />
+      
       <AnimatedSection>
         <Box mb={16} textAlign="center">
           <Badge
@@ -328,9 +326,7 @@ export default function About() {
               whileTap={{ scale: 0.95 }}
             >
               <Button
-                as="a"
-                href="/brochure.pdf"
-                download="brochure.pdf"
+                asChild
                 size="xl"
                 bg={buttonBg}
                 color="white"
@@ -344,8 +340,10 @@ export default function About() {
                   bg: useColorModeValue("#5A4BD6", "#9171E8"),
                 }}
               >
-                <FiDownload style={{ marginRight: "12px", fontSize: "1.2em" }} />
-                Download Full Brochure
+                <a href="/brochure.pdf" download="brochure.pdf">
+                  <FiDownload style={{ marginRight: "12px", fontSize: "1.2em" }} />
+                  Download Catalog
+                </a>
               </Button>
             </MotionBox>
           </VStack>

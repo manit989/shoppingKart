@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   Badge,
@@ -13,13 +15,12 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router";
+import NextLink from "next/link";
 import { FaHammer, FaLeaf, FaTruck } from "react-icons/fa6";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import Carousel from "./components/Carousel";
-import SEO from "./components/SEO";
 import "./index.css";
 
 /* ── Motion-enhanced Chakra primitives ─────────── */
@@ -143,11 +144,7 @@ export function App() {
 
   return (
     <Box bg={pageBg} minH="100vh">
-      <SEO 
-        title="Smart Office Furniture Solutions" 
-        description="AVIMA Seating provides smart, comfortable, and durable office furniture solutions. Explore our legacy of craftsmanship and modern ergonomic seating."
-        keywords="office furniture, ergonomic seating, workstations, AVIMA seating, smart office solutions"
-      />
+      
       {/* ── Hero Section ────────────────────────── */}
       <Flex
         minH={{ base: "90vh", md: "115vh" }}
@@ -274,30 +271,29 @@ export function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.9 }}
                   >
-                    <Button
-                      asChild
-                      size="lg"
-                      w={{ base: "full", md: "auto" }}
-                      bg={buttonBg}
-                      color={buttonText}
-                      _hover={{
-                        bg: buttonHoverBg,
-                        transform: "translateY(-2px)",
-                      }}
-                      transition="transform 0.25s ease, background-color 0.25s ease"
-                      variant="solid"
-                      fontFamily="'Inter', sans-serif"
-                      fontWeight="500"
-                      letterSpacing="wider"
-                      textTransform="uppercase"
-                      borderRadius="xl"
-                      px="8"
-                      className="cta-glow"
-                    >
-                      <RouterLink to="/product">
+                    <NextLink href="/product">
+                      <Button
+                        size="lg"
+                        w={{ base: "full", md: "auto" }}
+                        bg={buttonBg}
+                        color={buttonText}
+                        _hover={{
+                          bg: buttonHoverBg,
+                          transform: "translateY(-2px)",
+                        }}
+                        transition="transform 0.25s ease, background-color 0.25s ease"
+                        variant="solid"
+                        fontFamily="'Inter', sans-serif"
+                        fontWeight="500"
+                        letterSpacing="wider"
+                        textTransform="uppercase"
+                        borderRadius="xl"
+                        px="8"
+                        className="cta-glow"
+                      >
                         Explore the Collection
-                      </RouterLink>
-                    </Button>
+                      </Button>
+                    </NextLink>
                   </MotionBox>
                 </Box>
 
@@ -608,7 +604,9 @@ export function App() {
               borderRadius="xl"
               px="8"
             >
-              <RouterLink to="/clients">View Our Clients</RouterLink>
+              <NextLink href="/clients">
+                View Our Clients
+              </NextLink>
             </Button>
           </Box>
         </AnimatedSection>

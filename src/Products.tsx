@@ -1,3 +1,5 @@
+"use client";
+
 import {
   AspectRatio,
   Badge,
@@ -18,7 +20,6 @@ import { useColorModeValue } from "./components/ui/color-mode";
 import { catalogProducts, catalogSections, catalogTags } from "./data/catalog";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -78,10 +79,7 @@ export default function Products() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 12 }}
     >
-      <SEO 
-        title="Our Products & Collections" 
-        description="Browse AVIMA's complete catalog of ergonomic office chairs, workstations, and smart seating solutions designed for modern workspaces."
-      />
+      
       <AnimatedSection>
         <Box mb={8}>
           <Badge

@@ -75,7 +75,7 @@ export default function Carousel() {
         duration: 0.2,
       },
     },
-  };
+  } as any;
 
   return (
     <Box w="full" px={{ base: 4, md: 8, lg: 12 }} py={10}>
@@ -122,9 +122,9 @@ export default function Carousel() {
             left="0"
             w="full"
             h="full"
-            bgImage={`url(${images[currentIndex]})`}
-            bgSize="cover"
-            bgPosition="center"
+            backgroundImage={`url(${images[currentIndex]})`}
+            backgroundSize="cover"
+            backgroundPosition="center"
           />
         </AnimatePresence>
 

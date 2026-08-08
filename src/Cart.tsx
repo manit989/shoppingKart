@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import {
   Badge,
@@ -13,11 +15,10 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { FiMinus, FiPlus, FiTrash2 } from "react-icons/fi";
-import { Link } from "react-router";
+import NextLink from "next/link";
 import { useCart } from "./components/cart-context";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion } from "motion/react";
-import SEO from "./components/SEO";
 
 const MotionBox = motion.create(Box);
 
@@ -79,23 +80,20 @@ export default function Cart() {
       px={{ base: 4, md: 8, lg: 12 }}
       py={{ base: 8, md: 12 }}
     >
-      <SEO 
-        title="Your Cart" 
-        description="Review your selected AVIMA seating products and send a direct enquiry to our team for a personalized quote."
-      />
+      
       <MotionBox
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
         <Flex mb={4} gap={3} wrap="wrap" color={mutedColor} fontSize="sm">
-          <Box as={Link} to="/" className="animated-link">
-            Home
-          </Box>
+          <NextLink href="/" className="animated-link">
+              Home
+          </NextLink>
           <Box as="span">/</Box>
-          <Box as={Link} to="/product" className="animated-link">
-            Products
-          </Box>
+          <NextLink href="/product" className="animated-link">
+              Products
+          </NextLink>
           <Box as="span">/</Box>
           <Box as="span" color={headingColor} fontWeight="700">
             Cart
@@ -198,7 +196,7 @@ export default function Cart() {
                   borderRadius="xl"
                   alignSelf="start"
                 >
-                  <Link to="/product">Browse products</Link>
+                  <NextLink href="/product">Browse products</NextLink>
                 </Button>
               </Stack>
             ) : (
@@ -296,13 +294,12 @@ export default function Cart() {
                       Send enquiry
                     </Button>
                   ) : (
-                    <MotionBox
-                      as="form"
-                      onSubmit={handleEnquirySubmit}
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      transition={{ duration: 0.4 }}
-                    >
+                    <form onSubmit={handleEnquirySubmit}>
+                      <MotionBox
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        transition={{ duration: 0.4 }}
+                      >
                       <Stack gap={3}>
                         <Text fontSize="sm" color={mutedColor}>
                           Share your details and we'll open WhatsApp with
@@ -407,12 +404,13 @@ export default function Cart() {
                           borderRadius="xl"
                           transition="all 0.25s ease"
                           type="submit"
-                          isDisabled={cart.length === 0}
+                          disabled={cart.length === 0}
                         >
                           Submit enquiry on WhatsApp
                         </Button>
                       </Stack>
                     </MotionBox>
+                    </form>
                   )}
                 </Box>
               </Stack>

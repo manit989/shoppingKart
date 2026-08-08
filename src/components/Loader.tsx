@@ -143,13 +143,20 @@ function BoySittingOnChair({ color }: { color: string }) {
 export default function Loader() {
   const [isVisible, setIsVisible] = useState(true);
   const [showBrand, setShowBrand] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const bg = useColorModeValue("#FAFBFF", "#0A0E1A");
   const accentColor = useColorModeValue("#6C5CE7", "#A78BFA");
   const textColor = useColorModeValue("#1A1D2E", "#F0F1F5");
   const subtleColor = useColorModeValue("#5A5E72", "#9CA3AF");
 
+  const safeBg = mounted ? bg : "#FAFBFF";
+  const safeAccent = mounted ? accentColor : "#6C5CE7";
+  const safeText = mounted ? textColor : "#1A1D2E";
+  const safeSubtle = mounted ? subtleColor : "#5A5E72";
+
   useEffect(() => {
+    setMounted(true);
     // Show brand text after the boy animation plays
     const brandTimer = setTimeout(() => {
       setShowBrand(true);
@@ -175,7 +182,7 @@ export default function Loader() {
           left="0"
           w="100vw"
           h="100vh"
-          bg={bg}
+          bg={safeBg}
           zIndex="9999"
           justify="center"
           align="center"
@@ -201,7 +208,7 @@ export default function Loader() {
                 },
               }}
             >
-              <BoySittingOnChair color={accentColor} />
+              <BoySittingOnChair color={safeAccent} />
             </MotionBox>
 
             {/* AVIMA brand pop-up */}
@@ -221,7 +228,7 @@ export default function Loader() {
                     fontFamily="'Playfair Display', serif"
                     fontSize={{ base: "3xl", md: "4xl" }}
                     fontWeight="700"
-                    color={textColor}
+                    color={safeText}
                     letterSpacing="0.15em"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -234,7 +241,7 @@ export default function Loader() {
                     fontFamily="'Inter', sans-serif"
                     fontSize={{ base: "sm", md: "md" }}
                     fontWeight="500"
-                    color={subtleColor}
+                    color={safeSubtle}
                     letterSpacing="0.3em"
                     textTransform="uppercase"
                     mt={1}
@@ -248,7 +255,7 @@ export default function Loader() {
                   {/* Animated underline */}
                   <MotionBox
                     h="2px"
-                    bg={accentColor}
+                    bg={safeAccent}
                     borderRadius="full"
                     mt={3}
                     mx="auto"
@@ -267,7 +274,7 @@ export default function Loader() {
                   key={i}
                   w="8px"
                   h="8px"
-                  bg={accentColor}
+                  bg={safeAccent}
                   borderRadius="full"
                   animate={{
                     y: [0, -10, 0],
