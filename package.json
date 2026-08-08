@@ -20,7 +20,9 @@
   "devDependencies": {
     "@chakra-ui/cli": "^3.36.0",
     "@types/bun": "latest",
+    "@types/node": "^26.2.0",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "typescript": "^5.9.3"
   }
 }
