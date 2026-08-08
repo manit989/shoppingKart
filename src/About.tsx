@@ -13,7 +13,7 @@ import {
   Icon,
   HStack,
 } from "@chakra-ui/react";
-import { FiDownload, FiCheckCircle, FiHeart, FiShield, FiStar, FiUsers, FiAward, FiClock, FiThumbsUp } from "react-icons/fi";
+import { FiDownload, FiCheckCircle, FiHeart, FiShield, FiStar, FiUsers, FiAward, FiClock, FiThumbsUp, FiFacebook, FiInstagram } from "react-icons/fi";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -271,6 +271,18 @@ export default function About() {
             <Heading as="h2" size={{ base: "xl", md: "2xl" }} color={accentColor} fontStyle="italic" fontFamily="'Playfair Display', serif" lineHeight="1.3">
               Avima Seating — Manufacturing Your Dream Furniture
             </Heading>
+            <HStack justify="center" gap={8} mt={8}>
+              <a href="https://www.facebook.com/avimaseating/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', transition: 'all 0.2s', color: mutedColor }}>
+                <Box _hover={{ color: accentColor, transform: "scale(1.1)" }}>
+                  <Icon as={FiFacebook} boxSize={8} />
+                </Box>
+              </a>
+              <a href="https://www.instagram.com/avimaseating/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', transition: 'all 0.2s', color: mutedColor }}>
+                <Box _hover={{ color: accentColor, transform: "scale(1.1)" }}>
+                  <Icon as={FiInstagram} boxSize={8} />
+                </Box>
+              </a>
+            </HStack>
           </Box>
         </AnimatedSection>
 

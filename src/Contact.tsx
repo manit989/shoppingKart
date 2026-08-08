@@ -12,7 +12,7 @@ import {
   HStack,
   Icon,
 } from "@chakra-ui/react";
-import { FiPhone, FiMail, FiGlobe, FiMapPin, FiStar } from "react-icons/fi";
+import { FiPhone, FiMail, FiGlobe, FiMapPin, FiStar, FiFacebook, FiInstagram } from "react-icons/fi";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -59,36 +59,50 @@ export default function Contact() {
     {
       icon: FiPhone,
       title: "Contact Us",
-      details: ["+91 89200 22074", "+91 99999 28595"],
+      details: [
+        { text: "+91 89200 22074", link: "tel:+918920022074" },
+        { text: "+91 99999 28595", link: "tel:+919999928595" }
+      ],
     },
     {
       icon: FiMail,
       title: "Email Us",
-      details: ["avimaseating@gmail.com", "sales@avima.co.in"],
+      details: [
+        { text: "avimaseating@gmail.com", link: "mailto:avimaseating@gmail.com" },
+        { text: "sales@avima.co.in", link: "mailto:sales@avima.co.in" }
+      ],
     },
     {
       icon: FiGlobe,
       title: "Visit Website",
-      details: ["www.avimaseating.co.in"],
+      details: [{ text: "www.avimaseating.co.in", link: "https://www.avimaseating.co.in" }],
+    },
+    {
+      icon: FiFacebook,
+      title: "Social Media",
+      details: [
+        { text: "Facebook", link: "https://www.facebook.com/avimaseating/" },
+        { text: "Instagram", link: "https://www.instagram.com/avimaseating/" }
+      ],
     },
     {
       icon: FiMapPin,
       title: "Headquarter - Lucknow",
       details: [
-        "Plot No. 217, Ramji Nagar",
-        "Near Naira Petrol Pump, Asti Road",
-        "Bakshi Ka Talab, Lucknow",
-        "Uttar Pradesh, 226201",
+        { text: "Plot No. 217, Ramji Nagar" },
+        { text: "Near Naira Petrol Pump, Asti Road" },
+        { text: "Bakshi Ka Talab, Lucknow" },
+        { text: "Uttar Pradesh, 226201" },
       ],
     },
     {
       icon: FiMapPin,
       title: "Our Branches",
       details: [
-        "Gorakhpur",
-        "Gonda",
-        "Noida",
-        "Delhi",
+        { text: "Gorakhpur" },
+        { text: "Gonda" },
+        { text: "Noida" },
+        { text: "Delhi" },
       ],
     },
   ];
@@ -157,9 +171,19 @@ export default function Contact() {
                       {method.title}
                     </Heading>
                     {method.details.map((detail, i) => (
-                      <Text key={i} color={mutedColor} fontSize="md">
-                        {detail}
-                      </Text>
+                      <Box key={i}>
+                        {"link" in detail && detail.link ? (
+                          <a href={detail.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <Box color={accentColor} _hover={{ textDecoration: "underline" }} fontSize="md" display="inline-block">
+                              {detail.text}
+                            </Box>
+                          </a>
+                        ) : (
+                          <Text color={mutedColor} fontSize="md">
+                            {detail.text}
+                          </Text>
+                        )}
+                      </Box>
                     ))}
                   </Box>
                 </Flex>
