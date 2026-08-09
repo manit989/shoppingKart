@@ -565,5 +565,75 @@
     "category": "Workstation",
     "photo": "/assets/products/product-81.png",
     "info": ""
+  },
+  {
+    "id": 82,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-82.jpg",
+    "info": ""
+  },
+  {
+    "id": 83,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-83.jpg",
+    "info": ""
+  },
+  {
+    "id": 84,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-84.jpg",
+    "info": ""
+  },
+  {
+    "id": 85,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-85.jpg",
+    "info": ""
+  },
+  {
+    "id": 86,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-86.jpg",
+    "info": ""
+  },
+  {
+    "id": 87,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-87.jpg",
+    "info": ""
+  },
+  {
+    "id": 88,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-88.jpg",
+    "info": ""
+  },
+  {
+    "id": 89,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-89.jpg",
+    "info": ""
+  },
+  {
+    "id": 90,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-90.jpg",
+    "info": ""
+  },
+  {
+    "id": 91,
+    "name": "KG Furnitures Series",
+    "category": "KG Furnitures Series",
+    "photo": "/assets/products/product-91.jpg",
+    "info": ""
   }
 ]

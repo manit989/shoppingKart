@@ -24,6 +24,9 @@ const clients = [
   { name: "Jal Shakti Department", logo: "/assets/customers/JalShakti.jpg" },
   { name: "Pusa Institute Delhi", logo: "/assets/customers/PusaDelhi.jpeg" },
   { name: "UP Police", logo: "/assets/customers/UpPolice.jpg" },
+  { name: "Delhi Jal Board", logo: "/assets/customers/DElhiJalBoard.jpg" },
+  { name: "SRDAV School", logo: "/assets/customers/SRDAVSchool.jpg" },
+  { name: "Punjab and Sind Bank", logo: "/assets/customers/punjab-and-sind-bank.png" },
 ];
 
 export default function Clients() {

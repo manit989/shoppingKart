@@ -80,7 +80,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 mb={4}
               />
               <Text color={bodyColor} maxW="sm">
-                Smart office furniture solutions designed for calm, practical,
+                Smart office furniture solutions designed for relaxing, practical,
                 and long-lasting workspaces.
               </Text>
             </Box>

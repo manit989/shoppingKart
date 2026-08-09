@@ -122,7 +122,7 @@ export function App() {
     },
     {
       icon: FaTruck,
-      title: "Easy delivery",
+      title: "Fastest delivery",
       text: "A smooth order experience from enquiry to final placement.",
     },
   ];
@@ -350,16 +350,18 @@ export function App() {
               About AVIMA
             </Text>
             <Heading as="h2" size="xl" color={panelText} mb={3}>
-              Designed to make workspaces feel calm, focused, and comfortable.
+              Designed to make workspaces feel relaxing, focused, and comfortable.
             </Heading>
             <Text
               color={bodyText}
               fontSize={{ base: "md", md: "lg" }}
               maxW="3xl"
             >
-              AVIMA Seating is a smart office furniture brand focused on comfort,
-              durability, and practical design. Every piece is selected to
-              support productive workspaces without feeling stiff.
+              Avima Seating is a furniture brand built on a legacy of craftsmanship, innovation and trust,
+              with roots in furniture making dating back to 1985.
+              Founded with the vision of creating furniture that is not only functional and affordable but also comfortable,
+              reliable and designed around the needs of people,
+              we are committed to redefining the way people experience furniture.
             </Text>
           </Box>
         </AnimatedSection>
@@ -605,7 +607,7 @@ export function App() {
               px="8"
             >
               <NextLink href="/clients">
-                View Our Clients
+                View Our Customers
               </NextLink>
             </Button>
           </Box>

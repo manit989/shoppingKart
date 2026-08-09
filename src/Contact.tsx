@@ -13,6 +13,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { FiPhone, FiMail, FiGlobe, FiMapPin, FiStar, FiFacebook, FiInstagram } from "react-icons/fi";
+import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useColorModeValue } from "./components/ui/color-mode";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -61,7 +62,8 @@ export default function Contact() {
       title: "Contact Us",
       details: [
         { text: "+91 89200 22074", link: "tel:+918920022074" },
-        { text: "+91 99999 28595", link: "tel:+919999928595" }
+        { text: "+91 99999 28595", link: "tel:+919999928595" },
+        { text: "+91 99998 08454", link: "https://wa.me/919999808454", icon: FaWhatsapp }
       ],
     },
     {
@@ -81,8 +83,9 @@ export default function Contact() {
       icon: FiFacebook,
       title: "Social Media",
       details: [
-        { text: "Facebook", link: "https://www.facebook.com/avimaseating/" },
-        { text: "Instagram", link: "https://www.instagram.com/avimaseating/" }
+        { text: "Facebook", link: "https://www.facebook.com/avimaseating/", icon: FaFacebook },
+        { text: "Instagram", link: "https://www.instagram.com/avimaseating/", icon: FaInstagram },
+        { text: "LinkedIn", link: "https://www.linkedin.com/company/avima-seating/?viewAsMember=true", icon: FaLinkedin }
       ],
     },
     {
@@ -171,17 +174,19 @@ export default function Contact() {
                       {method.title}
                     </Heading>
                     {method.details.map((detail, i) => (
-                      <Box key={i}>
+                      <Box key={i} mt={1}>
                         {"link" in detail && detail.link ? (
                           <a href={detail.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                            <Box color={accentColor} _hover={{ textDecoration: "underline" }} fontSize="md" display="inline-block">
-                              {detail.text}
-                            </Box>
+                            <HStack color={accentColor} _hover={{ textDecoration: "underline" }} fontSize="md" display="inline-flex" alignItems="center" gap={2}>
+                              {"icon" in detail && detail.icon && <Icon as={detail.icon as any} />}
+                              <Box>{detail.text}</Box>
+                            </HStack>
                           </a>
                         ) : (
-                          <Text color={mutedColor} fontSize="md">
-                            {detail.text}
-                          </Text>
+                          <HStack color={mutedColor} fontSize="md" alignItems="center" gap={2}>
+                            {"icon" in detail && detail.icon && <Icon as={detail.icon as any} />}
+                            <Text>{detail.text}</Text>
+                          </HStack>
                         )}
                       </Box>
                     ))}

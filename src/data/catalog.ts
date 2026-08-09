@@ -50,12 +50,26 @@ export const catalogProducts: CatalogProduct[] = products.map(product => ({
 
 const categoryMap = new Map<string, CatalogSection>();
 
+const sectionPrices: Record<string, string> = {
+  "chairs": "Starting at ₹1500",
+  "sofa": "₹3500 per seat",
+  "workstation": "₹3500 per seat",
+  "storage": "Starting at ₹9000",
+  "podium": "Starting at ₹4500",
+  "tables": "Starting at ₹4500",
+  "student furniture": "Chair starting at ₹1500, Table starting at ₹4500",
+  "kg furnitures series": "Chair starting at ₹1500, Table starting at ₹4500"
+};
+
 for (const product of catalogProducts) {
   if (!categoryMap.has(product.sectionId)) {
+    const categoryLower = product.category.toLowerCase();
+    const priceText = sectionPrices[categoryLower] ? ` | ${sectionPrices[categoryLower]}` : "";
+    
     categoryMap.set(product.sectionId, {
       id: product.sectionId,
       title: titleCase(product.category),
-      description: `Explore our ${product.category.toLowerCase()} collection.`,
+      description: `Explore our ${categoryLower} collection.${priceText}`,
     });
   }
 }
