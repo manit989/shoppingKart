@@ -2,8 +2,8 @@
 
 import type { IconButtonProps, SpanProps } from "@chakra-ui/react"
 import { ClientOnly, IconButton, Skeleton, Span } from "@chakra-ui/react"
-import { ThemeProvider, useTheme } from "next-themes"
-import type { ThemeProviderProps } from "next-themes"
+import { ClientThemeProvider as ThemeProvider, useTheme } from "@wrksz/themes/client"
+import type { ThemeProviderProps } from "@wrksz/themes/client"
 import * as React from "react"
 import { LuMoon, LuSun } from "react-icons/lu"
 

@@ -488,5 +488,82 @@
     "category": "Storage",
     "photo": "/assets/products/product-70.jpg",
     "info": ""
+  },
+  {
+    "id": 71,
+    "name": "AS-13 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-71.png",
+    "info": ""
+  },
+  {
+    "id": 72,
+    "name": "AS-06 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-72.png",
+    "info": ""
+  },
+  {
+    "id": 73,
+    "name": "AS-09 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-73.png",
+    "info": ""
+  },
+  {
+    "id": 74,
+    "name": "AS-07 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-74.png",
+    "info": ""
+  },
+  {
+    "id": 75,
+    "name": "AS-03 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-75.png",
+    "info": ""
+  },
+  {
+    "id": 76,
+    "name": "AS-01 Student Furniture Series",
+    "category": "Student Furniture",
+    "photo": "/assets/products/product-76.png",
+    "info": ""
+  },
+  {
+    "id": 77,
+    "name": "Modular Workstation AS-02",
+    "category": "Workstation",
+    "photo": "/assets/products/product-77.png",
+    "info": ""
+  },
+  {
+    "id": 78,
+    "name": "Modular Workstation AS-03",
+    "category": "Workstation",
+    "photo": "/assets/products/product-78.png",
+    "info": ""
+  },
+  {
+    "id": 79,
+    "name": "Modular Workstation AS-04",
+    "category": "Workstation",
+    "photo": "/assets/products/product-79.png",
+    "info": ""
+  },
+  {
+    "id": 80,
+    "name": "Modular Workstation AS-08",
+    "category": "Workstation",
+    "photo": "/assets/products/product-80.png",
+    "info": ""
+  },
+  {
+    "id": 81,
+    "name": "Modular Workstation AS-09",
+    "category": "Workstation",
+    "photo": "/assets/products/product-81.png",
+    "info": ""
   }
 ]
