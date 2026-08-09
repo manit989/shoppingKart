@@ -50,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             AVIMA Seating
           </Text>
           <Text fontSize="sm" opacity={0.9}>
-            Smart office furniture solutions for seating, storage, and
+            Smart furniture solutions for seating, storage, and
             workstations.
           </Text>
         </HStack>
