@@ -105,8 +105,8 @@ export function App() {
 
   const trustStats = [
     { value: "4.0+/5", label: "Average review score" },
-    { value: "48h", label: "Fast enquiry response" },
-    { value: "100+", label: "Offices styled" },
+    { value: "6h", label: "Fast enquiry response" },
+    { value: "1000+", label: "Offices styled" },
   ];
 
   const serviceHighlights = [
@@ -144,7 +144,7 @@ export function App() {
 
   return (
     <Box bg={pageBg} minH="100vh">
-      
+
       {/* ── Hero Section ────────────────────────── */}
       <Flex
         minH={{ base: "90vh", md: "115vh" }}
@@ -226,7 +226,7 @@ export function App() {
                         borderRadius="full"
                         fontWeight="600"
                       >
-                        Smart office furniture solutions
+                        Smart furniture solutions
                       </Badge>
                     </WrapItem>
                   </Wrap>
