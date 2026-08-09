@@ -16,18 +16,7 @@ import "./index.css";
 
 const MotionBox = motion.create(Box);
 
-const clients = [
-  { name: "GD Goenka University", logo: "/assets/customers/GdGoenka.jpeg" },
-  { name: "Adarsh World School", logo: "/assets/customers/adarshSchool.png" },
-  { name: "Amity University", logo: "/assets/customers/amity.jpg" },
-  { name: "Indian Railways", logo: "/assets/customers/IndianRailways.png" },
-  { name: "Jal Shakti Department", logo: "/assets/customers/JalShakti.jpg" },
-  { name: "Pusa Institute Delhi", logo: "/assets/customers/PusaDelhi.jpeg" },
-  { name: "UP Police", logo: "/assets/customers/UpPolice.jpg" },
-  { name: "Delhi Jal Board", logo: "/assets/customers/DElhiJalBoard.jpg" },
-  { name: "SRDAV School", logo: "/assets/customers/SRDAVSchool.jpg" },
-  { name: "Punjab and Sind Bank", logo: "/assets/customers/punjab-and-sind-bank.png" },
-];
+import { clients } from "./data/clients";
 
 export default function Clients() {
   const pageBg = useColorModeValue("#FAFBFF", "#0A0E1A");
@@ -49,7 +38,7 @@ export default function Clients() {
 
   return (
     <Box bg={pageBg} minH="100vh">
-      
+
       {/* Hero Section */}
       <Box
         pt={{ base: 16, md: 24 }}
@@ -210,49 +199,6 @@ export default function Clients() {
         </Container>
       </Box>
 
-      {/* Trust Banner */}
-      <Box
-        px={{ base: 4, md: 8, lg: 12 }}
-        pb={{ base: 12, md: 18 }}
-        textAlign="center"
-      >
-        <Container maxW="3xl" px={0}>
-          <MotionBox
-            bg={cardBg}
-            borderWidth="1px"
-            borderColor={borderColor}
-            borderRadius="2xl"
-            p={{ base: 6, md: 10 }}
-            className="glass-panel"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.7 }}
-          >
-            <Text
-              fontFamily="'Playfair Display', serif"
-              fontSize={{ base: "lg", md: "xl" }}
-              fontStyle="italic"
-              color={panelText}
-              lineHeight="1.6"
-            >
-              "We partner with institutions that share our commitment to
-              quality, comfort, and functional design."
-            </Text>
-            <Text
-              fontFamily="'Inter', sans-serif"
-              fontSize="sm"
-              fontWeight="600"
-              color={accentColor}
-              mt={4}
-              textTransform="uppercase"
-              letterSpacing="0.12em"
-            >
-              — AVIMA Seating Team
-            </Text>
-          </MotionBox>
-        </Container>
-      </Box>
     </Box>
   );
 }

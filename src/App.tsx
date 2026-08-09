@@ -9,12 +9,14 @@ import {
   Grid,
   GridItem,
   Heading,
+  Image,
   SimpleGrid,
   Stack,
   Text,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { clients } from "./data/clients";
 import NextLink from "next/link";
 import { FaHammer, FaLeaf, FaTruck } from "react-icons/fa6";
 import { useColorModeValue } from "./components/ui/color-mode";
@@ -499,6 +501,21 @@ export function App() {
       {/* ── FAQ & CTA Section ────────────────────── */}
       <Box px={{ base: 4, md: 8, lg: 12 }} pb={{ base: 12, md: 18 }}>
         <AnimatedSection>
+          <Box mb={8} textAlign="center">
+            <Badge
+              bg="rgba(108, 92, 231, 0.1)"
+              color={accentColor}
+              borderRadius="full"
+              px={3}
+              py={1}
+              mb={3}
+            >
+              FAQs
+            </Badge>
+            <Heading as="h2" size="xl" color={panelText} mb={4}>
+              Frequently Asked Questions
+            </Heading>
+          </Box>
           <Accordion.Root collapsible defaultValue={[] as string[]}>
             <Accordion.Item value="faq-1">
               <Accordion.ItemTrigger>
@@ -530,6 +547,51 @@ export function App() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
+          {/* Moving Clients Banner */}
+          <Box
+            py={10}
+            mb={8}
+            borderTopWidth="1px"
+            borderBottomWidth="1px"
+            borderColor={borderColor}
+            bg="rgba(108, 92, 231, 0.02)"
+          >
+            <div className="marquee-container">
+              <div className="marquee-content">
+                {[...clients, ...clients].map((client, i) => (
+                  <Box
+                    key={`${client.name}-${i}`}
+                    display="inline-flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    mx={{ base: 6, md: 10 }}
+                    w="160px"
+                    h="100px"
+                  >
+                    <Image
+                      src={client.logo}
+                      alt={`${client.name} logo`}
+                      maxH="70px"
+                      maxW="140px"
+                      objectFit="contain"
+                      style={{
+                        filter: "grayscale(100%) opacity(0.6)",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer"
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.filter = "grayscale(0%) opacity(1)";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.filter = "grayscale(100%) opacity(0.6)";
+                      }}
+                    />
+                  </Box>
+                ))}
+              </div>
+            </div>
+          </Box>
+
           <Box
             bg={cardBg}
             borderWidth="1px"

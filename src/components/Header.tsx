@@ -1,12 +1,13 @@
 "use client";
 
-import { Container, Flex } from "@chakra-ui/react";
+import { Container, Flex, HStack } from "@chakra-ui/react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useColorModeValue } from "@/components/ui/color-mode";
 
 import HeaderLogo from "./HeaderLogo";
 import HeaderNavigation from "./HeaderNavigation";
 import HeaderActions from "./HeaderActions";
+import MobileNav from "./MobileNav";
 
 const MotionFlex = motion.create(Flex);
 
@@ -54,14 +55,18 @@ export default function Header() {
           {/* Logo Section */}
           <HeaderLogo />
 
-          {/* Navigation Section */}
+          {/* Navigation Section (Desktop only) */}
           <HeaderNavigation />
 
-          {/* Actions Section (Cart, Theme Toggle) */}
-          <HeaderActions />
+          {/* Actions Section (Cart, Theme Toggle, Mobile Menu) */}
+          <HStack gap={{ base: 1, md: 4 }}>
+            <HeaderActions />
+            <MobileNav />
+          </HStack>
           
         </Flex>
       </Container>
     </MotionFlex>
   );
 }
+

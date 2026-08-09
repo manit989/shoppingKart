@@ -230,3 +230,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(108, 92, 231, 0.45);
 }
+
+/* ── Marquee Animation ────────────────────────── */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: scrollMarquee 35s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
